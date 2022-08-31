@@ -1,0 +1,8 @@
+/*
+Bagi Satu Desimal dengan Desimal lainnya dengan JavaScript
+Sekarang mari kita bagi satu desimal dengan yang lain.
+
+-> Ubah 0.0sehingga quotientakan sama dengan 2.2.
+ */
+
+const quotient = 4.4 / 2.0; // Change this line

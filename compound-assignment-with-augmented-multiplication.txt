@@ -1,0 +1,20 @@
+/*
+Tugas Majemuk Dengan Perkalian Tertambah
+Operator *=mengalikan variabel dengan angka.
+
+myVar = myVar * 5;
+akan dikalikan myVardengan 5. Ini dapat ditulis ulang sebagai:
+
+myVar *= 5;
+
+-> Konversikan penetapan untuk a, b, dan cuntuk menggunakan *=operator.
+ */
+
+let a = 5;
+let b = 12;
+let c = 4.6;
+
+// Only change code below this line
+a *= 5;
+b *= 3;
+c *= 10;

@@ -1,0 +1,17 @@
+/*
+Kurangi Angka dengan JavaScript
+Anda dapat dengan mudah mengurangi atau mengurangi variabel satu per satu dengan --operator.
+
+i--;
+adalah setara dengan
+
+i = i - 1;
+Catatan: Seluruh baris menjadi i--;, menghilangkan kebutuhan akan tanda sama dengan.
+
+Ubah kode untuk menggunakan --operator di myVar.
+ */
+
+let myVar = 11;
+
+// Only change code below this line
+myVar--;

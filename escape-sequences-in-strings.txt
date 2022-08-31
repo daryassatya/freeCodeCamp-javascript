@@ -1,0 +1,34 @@
+/*
+Urutan Escape dalam String
+
+Kutipan bukan satu-satunya karakter yang dapat diloloskan di dalam string. Ada dua alasan untuk menggunakan karakter pelolosan:
+
+Untuk memungkinkan Anda menggunakan karakter, Anda mungkin tidak dapat mengetik, seperti carriage return.
+Untuk memungkinkan Anda merepresentasikan beberapa tanda kutip dalam sebuah string tanpa JavaScript salah mengartikan apa yang Anda maksud.
+Kami mempelajari ini di tantangan sebelumnya.
+
+Kode	Keluaran
+\'	kutipan tunggal
+\"	kutipan ganda
+\\	garis miring terbalik
+\n	garis baru
+\r	Kereta kembali
+\t	tab
+\b	batas kata
+\f	umpan formulir
+Perhatikan bahwa garis miring terbalik itu sendiri harus diloloskan agar dapat ditampilkan sebagai garis miring terbalik.
+
+-> Tetapkan tiga baris teks berikut ke dalam variabel tunggal myStrmenggunakan urutan escape.
+
+FirstLine
+    \SecondLine
+ThirdLine
+
+Anda perlu menggunakan urutan pelarian untuk memasukkan karakter khusus dengan benar. Anda juga harus mengikuti spasi seperti yang terlihat di atas, tanpa spasi di antara urutan escape atau kata.
+
+Catatan: Indentasi untuk SecondLinedicapai dengan karakter pelarian tab, bukan spasi.
+
+
+ */
+
+const myStr = "FirstLine\n\t\\SecondLine\nThirdLine"; // Change this line

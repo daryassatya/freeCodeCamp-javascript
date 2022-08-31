@@ -1,0 +1,19 @@
+/*
+Menggabungkan String dengan Operator Plus
+
+Dalam JavaScript, ketika +operator digunakan dengan Stringnilai, itu disebut operator gabungan . Anda dapat membuat string baru dari string lain dengan menggabungkannya .
+
+Contoh
+
+'My name is Alan,' + ' I concatenate.'
+Catatan: Perhatikan spasi. Penggabungan tidak menambahkan spasi di antara string yang digabungkan, jadi Anda harus menambahkannya sendiri.
+
+Contoh:
+
+const ourStr = "I come first. " + "I come second.";
+String I come first. I come second.akan ditampilkan di konsol.
+
+-> Bangun myStrdari string This is the start.dan This is the end.gunakan +operator. Pastikan untuk menyertakan spasi di antara dua string.
+ */
+
+const myStr = "This is the start."+" This is the end."; // Change this line

@@ -1,0 +1,25 @@
+/*
+Tugas Majemuk Dengan Penambahan Tambahan
+Dalam pemrograman, biasanya menggunakan tugas untuk mengubah isi variabel. Ingatlah bahwa segala sesuatu di sebelah kanan tanda sama dengan dievaluasi terlebih dahulu, sehingga kita dapat mengatakan:
+
+myVar = myVar + 5;
+5untuk menambah myVar. Karena ini adalah pola yang umum, ada operator yang melakukan operasi matematika dan penugasan dalam satu langkah.
+
+Salah satu operator tersebut adalah +=operator.
+
+let myVar = 1;
+myVar += 5;
+console.log(myVar);
+6akan ditampilkan di konsol.
+
+-> Konversikan penetapan untuk a, b, dan cuntuk menggunakan +=operator.
+ */
+
+let a = 3;
+let b = 17;
+let c = 12;
+
+// Only change code below this line
+a +=12;
+b += 9;
+c += 7;

@@ -1,0 +1,10 @@
+/*
+Kalikan Dua Desimal dengan JavaScript
+Dalam JavaScript, Anda juga dapat melakukan perhitungan dengan angka desimal, seperti halnya bilangan bulat.
+
+Mari kita kalikan dua desimal bersama-sama untuk mendapatkan produk mereka.
+
+Ubah 0.0sehingga produk akan sama 5.0.
+ */
+
+const product = 2.0 * 2.5;

@@ -1,0 +1,21 @@
+/*
+Menemukan Sisa di JavaScript
+Operator sisa memberikan sisa %pembagian dua bilangan.
+
+Contoh
+
+5 % 2 = 1 karena
+Math.floor(5 / 2) = 2 (Pembagian)
+2 * 2 = 4
+5 - 4 = 1 (Sisa)
+Penggunaan
+Dalam matematika, suatu bilangan dapat diperiksa menjadi genap atau ganjil dengan memeriksa sisa pembagian bilangan tersebut dengan 2.
+
+17 % 2 = 1 (17 Ganjil)
+48 % 2 = 0 (48 Genap)
+Catatan: Operator sisa kadang-kadang salah disebut sebagai operator modulus. Ini sangat mirip dengan modulus, tetapi tidak bekerja dengan baik dengan angka negatif.
+
+-> Tetapkan remaindersama dengan sisa 11pembagian dengan 3menggunakan operator sisa ( ).%
+ */
+
+const remainder = 11 % 3;

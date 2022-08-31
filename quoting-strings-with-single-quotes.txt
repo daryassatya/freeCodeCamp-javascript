@@ -1,0 +1,28 @@
+/*
+Mengutip String dengan Kutipan Tunggal
+
+Nilai string dalam JavaScript dapat ditulis dengan tanda kutip tunggal atau ganda, selama Anda memulai dan mengakhiri dengan jenis tanda kutip yang sama. Tidak seperti beberapa bahasa pemrograman lain, tanda kutip tunggal dan ganda bekerja sama dalam JavaScript.
+
+const doubleQuoteStr = "This is a string"; 
+const singleQuoteStr = 'This is also a string';
+Alasan mengapa Anda mungkin ingin menggunakan satu jenis kutipan di atas yang lain adalah jika Anda ingin menggunakan keduanya dalam sebuah string. Ini mungkin terjadi jika Anda ingin menyimpan percakapan dalam string dan percakapan dalam tanda kutip. Penggunaan lain untuk itu adalah menyimpan <a>tag dengan berbagai atribut dalam tanda kutip, semuanya dalam string.
+
+const conversation = 'Finn exclaims to Jake, "Algebraic!"';
+Namun, ini menjadi masalah jika Anda perlu menggunakan tanda kutip terluar di dalamnya. Ingat, sebuah string memiliki jenis kutipan yang sama di awal dan akhir. Tetapi jika Anda memiliki kutipan yang sama di suatu tempat di tengah, string akan berhenti lebih awal dan menimbulkan kesalahan.
+
+const goodStr = 'Jake asks Finn, "Hey, let\'s go on an adventure?"'; 
+const badStr = 'Finn responds, "Let's go!"';
+Di sini badStrakan melempar kesalahan.
+
+Dalam goodStr di atas, Anda dapat menggunakan kedua tanda kutip dengan aman dengan menggunakan garis miring terbalik \sebagai karakter pelarian.
+
+Catatan: Garis miring terbalik \tidak boleh disamakan dengan garis miring ke depan /. Mereka tidak melakukan hal yang sama.
+
+-> Ubah string yang disediakan menjadi string dengan tanda kutip tunggal di awal dan akhir dan tanpa karakter escape.
+
+Saat ini, <a>tag dalam string menggunakan tanda kutip ganda di mana-mana. Anda perlu mengubah tanda kutip luar menjadi tanda kutip tunggal sehingga Anda dapat menghapus karakter escape.
+
+
+ */
+
+const myStr = '<a href="http://www.example.com" target="_blank">Link</a>';

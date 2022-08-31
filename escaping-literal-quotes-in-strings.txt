@@ -1,0 +1,15 @@
+/*
+Melarikan diri dari Kutipan Literal dalam String
+
+Saat Anda mendefinisikan string, Anda harus memulai dan mengakhiri dengan tanda kutip tunggal atau ganda. Apa yang terjadi ketika Anda membutuhkan kutipan literal: "atau 'di dalam string Anda?
+
+Dalam JavaScript, Anda dapat menghindari kutipan dari menganggapnya sebagai akhir kutipan string dengan menempatkan garis miring terbalik ( \) di depan kutipan.
+
+const sampleStr = "Alan said, \"Peter is learning JavaScript\"."
+
+-> Gunakan garis miring terbalik untuk menetapkan string ke myStrvariabel sehingga jika Anda mencetaknya ke konsol, Anda akan melihat:
+
+I am a "double quoted" string inside "double quotes".
+ */
+
+const myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line

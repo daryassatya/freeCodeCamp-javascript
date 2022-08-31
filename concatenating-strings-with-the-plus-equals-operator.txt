@@ -1,0 +1,23 @@
+/*
+Menggabungkan String dengan Operator Plus Equals
+
+Kita juga dapat menggunakan +=operator untuk menggabungkan string ke akhir variabel string yang ada. Ini bisa sangat membantu untuk memutus tali panjang pada beberapa baris.
+
+Catatan: Perhatikan spasi. Penggabungan tidak menambahkan spasi di antara string yang digabungkan, jadi Anda harus menambahkannya sendiri.
+
+Contoh:
+
+let ourStr = "I come first. ";
+ourStr += "I come second.";
+ourStrsekarang memiliki nilai string I come first. I come second..
+
+-> Bangun myStrbeberapa baris dengan menggabungkan dua string ini: This is the first sentence.dan This is the second sentence.menggunakan +=operator. Gunakan +=operator yang mirip dengan yang ditunjukkan pada contoh dan pastikan untuk menyertakan spasi di antara dua string. Mulailah dengan menetapkan string pertama ke myStr, lalu tambahkan string kedua.
+
+tes
+Menunggu :myStrharus memiliki karakter spasi tunggal di antara dua string.
+Menunggu :myStrharus memiliki nilai stringThis is the first sentence. This is the second sentence.
+Menunggu :Anda harus menggunakan +=operator untuk membangun myStr.
+ */
+
+let myStr = "This is the first sentence.";
+myStr += " This is the second sentence.";
