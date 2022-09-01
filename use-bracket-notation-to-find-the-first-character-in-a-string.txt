@@ -1,0 +1,30 @@
+/*
+Gunakan Notasi Bracket untuk Menemukan Karakter Pertama dalam sebuah String
+
+Notasi kurung adalah cara untuk mendapatkan karakter pada indeks tertentu dalam sebuah string.
+
+Sebagian besar bahasa pemrograman modern, seperti JavaScript, tidak mulai menghitung pada 1 seperti yang dilakukan manusia. Mereka mulai dari 0. Ini disebut sebagai pengindeksan berbasis Nol .
+
+Misalnya, karakter pada indeks 0 dalam kata Charlesadalah C. Jadi jika const firstName = "Charles", Anda bisa mendapatkan nilai huruf pertama dari string dengan menggunakan firstName[0].
+
+Contoh:
+
+const firstName = "Charles";
+const firstLetter = firstName[0];
+firstLetterakan memiliki nilai string C.
+
+-> Gunakan notasi braket untuk menemukan karakter pertama dalam lastNamevariabel dan menetapkannya ke firstLetterOfLastName.
+
+Petunjuk: Coba lihat contoh di atas jika Anda buntu.
+
+Tes
+Menunggu :Variabel firstLetterOfLastNameharus memiliki nilai L.
+Menunggu :Anda harus menggunakan notasi kurung.
+ */
+
+// Setup
+let firstLetterOfLastName = "";
+const lastName = "Lovelace";
+
+// Only change code below this line
+firstLetterOfLastName = lastName[0]; // Change this line

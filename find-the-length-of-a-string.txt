@@ -1,0 +1,24 @@
+/*
+Cari Panjang Tali
+
+Anda dapat menemukan panjang suatu Stringnilai dengan menulis .lengthsetelah variabel string atau literal string.
+
+console.log("Alan Peter".length);
+Nilai 10akan ditampilkan di konsol. Perhatikan bahwa karakter spasi antara "Alan" dan "Peter" juga dihitung.
+
+Misalnya, jika kita membuat variabel const firstName = "Ada", kita bisa mengetahui berapa panjang string Adadengan menggunakan firstName.lengthproperti.
+
+Gunakan .lengthproperti untuk mengatur lastNameLengthjumlah karakter dalam lastName.
+
+Tes
+Menunggu :Anda tidak boleh mengubah deklarasi variabel di // Setupbagian.
+Menunggu :lastNameLengthharus sama dengan delapan.
+Menunggu :Anda harus mendapatkan panjang lastNamedengan menggunakan .lengthseperti ini: lastName.length.
+ */
+
+// Setup
+let lastNameLength = 0;
+const lastName = "Lovelace";
+
+// Only change code below this line
+lastNameLength = lastName.length;

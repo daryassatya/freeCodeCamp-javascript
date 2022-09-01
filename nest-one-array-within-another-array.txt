@@ -1,0 +1,16 @@
+/*
+Sarang satu Array di dalam Array Lain
+
+Anda juga dapat menyarangkan array di dalam array lain, seperti di bawah ini:
+
+const teams = [["Bulls", 23], ["White Sox", 45]];
+Ini juga disebut array multidimensi .
+
+-> Buat array bersarang bernama myArray.
+
+Tes
+Menunggu :myArrayharus memiliki setidaknya satu larik bersarang di dalam larik lain.
+ */
+
+// Only change code below this line
+const myArray = [["Dimas"], ["Arya", "satya"]];

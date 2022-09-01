@@ -1,0 +1,30 @@
+/*
+Kata Kosong
+
+Anda diberikan kalimat dengan beberapa kata yang hilang, seperti kata benda, kata kerja, kata sifat dan kata keterangan. Anda kemudian mengisi bagian yang hilang dengan kata-kata pilihan Anda sedemikian rupa sehingga kalimat yang lengkap masuk akal.
+
+Pertimbangkan kalimat ini - Itu benar-benar ____ , dan kami ____ sendiri ____ . Kalimat ini memiliki tiga bagian yang hilang- kata sifat, kata kerja dan kata keterangan, dan kita dapat menambahkan kata-kata pilihan kita untuk melengkapinya. Kami kemudian dapat menetapkan kalimat lengkap ke variabel sebagai berikut:
+
+const sentence = "It was really " + "hot" + ", and we " + "laughed" + " ourselves " + "silly" + ".";
+
+-> Dalam tantangan ini, kami memberi Anda kata benda, kata kerja, kata sifat, dan kata keterangan. Anda perlu membentuk kalimat lengkap menggunakan kata-kata pilihan Anda, bersama dengan kata-kata yang kami sediakan.
+
+Anda perlu menggunakan operator penggabungan string +untuk membuat string baru, menggunakan variabel yang disediakan: myNoun, myAdjective, myVerb, dan myAdverb. Anda kemudian akan menetapkan string yang terbentuk ke wordBlanksvariabel. Anda tidak boleh mengubah kata-kata yang ditetapkan ke variabel.
+
+Anda juga perlu memperhitungkan spasi dalam string Anda, sehingga kalimat terakhir memiliki spasi di antara semua kata. Hasilnya harus berupa kalimat lengkap.
+
+Tes
+Menunggu :wordBlanksharus berupa string.
+Menunggu :Anda tidak boleh mengubah nilai yang ditetapkan ke myNoun, myVerb, myAdjectiveatau myAdverb.
+Menunggu :Anda tidak boleh langsung menggunakan nilai dog, ran, big, atau quicklyuntuk membuat wordBlanks.
+Menunggu :wordBlanksharus berisi semua kata yang ditetapkan ke variabel myNoun, myVerb, myAdjectivedan myAdverbdipisahkan oleh karakter non-kata (dan kata tambahan pilihan Anda).
+ */
+
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+// Only change code below this line
+const wordBlanks = myNoun + " " + myAdjective + " " + myVerb + " " + myAdverb + "."; // Change this line
+// Only change code above this line

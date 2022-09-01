@@ -1,0 +1,24 @@
+/*
+Menambahkan Variabel ke String
+
+Sama seperti kita dapat membuat string pada beberapa baris dari string literal , kita juga dapat menambahkan variabel ke string menggunakan +=operator plus equals ( ).
+
+Contoh:
+
+const anAdjective = "awesome!";
+let ourStr = "freeCodeCamp is ";
+ourStr += anAdjective;
+ourStrakan memiliki nilai freeCodeCamp is awesome!.
+
+-> Setel someAdjectiveke string minimal 3 karakter dan tambahkan ke myStrmenggunakan +=operator.
+ 
+ Tes
+Menunggu :someAdjectiveharus diatur ke string minimal 3 karakter.
+Menunggu :Anda harus menambahkan someAdjectiveuntuk myStrmenggunakan +=operator.
+ */
+
+// Change code below this line
+const someAdjective = "Fun";
+let myStr = "Learning to code is ";
+
+myStr += someAdjective;

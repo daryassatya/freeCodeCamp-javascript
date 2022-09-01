@@ -1,0 +1,26 @@
+/*
+Gunakan Notasi Bracket untuk Menemukan Karakter Terakhir dalam sebuah String
+Untuk mendapatkan huruf terakhir dari sebuah string, Anda dapat mengurangi satu dari panjang string.
+
+Misalnya, jika const firstName = "Ada", Anda bisa mendapatkan nilai huruf terakhir dari string dengan menggunakan firstName[firstName.length - 1].
+
+Contoh:
+
+const firstName = "Ada";
+const lastLetter = firstName[firstName.length - 1];
+lastLetterakan memiliki nilai string a.
+
+-> Gunakan notasi braket untuk menemukan karakter terakhir dalam lastNamevariabel.
+
+Petunjuk: Coba lihat contoh di atas jika Anda buntu.
+
+Tes
+Menunggu :lastLetterOfLastNameseharusnya surat itu e.
+Menunggu :Anda harus menggunakan .lengthuntuk mendapatkan huruf terakhir.
+ */
+
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const lastLetterOfLastName = lastName[lastName.length - 1]; // Change this line

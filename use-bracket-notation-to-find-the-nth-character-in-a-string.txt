@@ -1,0 +1,27 @@
+/*
+Gunakan Notasi Bracket untuk Menemukan Karakter ke-N dalam sebuah String
+
+Anda juga dapat menggunakan notasi braket untuk mendapatkan karakter pada posisi lain dalam sebuah string.
+
+Ingat bahwa komputer mulai menghitung pada 0, jadi karakter pertama sebenarnya adalah karakter ke nol.
+
+Contoh:
+
+const firstName = "Ada";
+const secondLetterOfFirstName = firstName[1];
+secondLetterOfFirstNameakan memiliki nilai string d.
+
+Mari kita coba menyetel thirdLetterOfLastNameagar sama dengan huruf ketiga dari lastNamevariabel menggunakan notasi kurung.
+
+Petunjuk: Coba lihat contoh di atas jika Anda buntu.
+
+Tes
+Menunggu :Variabel thirdLetterOfLastNameharus memiliki nilai v.
+Menunggu :Anda harus menggunakan notasi kurung.
+ */
+
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const thirdLetterOfLastName = lastName[2]; // Change this line

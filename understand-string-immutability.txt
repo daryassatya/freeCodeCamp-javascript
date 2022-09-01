@@ -1,0 +1,27 @@
+/* 
+Memahami Kekekalan String
+
+Dalam JavaScript, Stringnilai tidak dapat diubah , yang berarti nilai tersebut tidak dapat diubah setelah dibuat.
+
+Misalnya, kode berikut:
+
+let myStr = "Bob";
+myStr[0] = "J";
+tidak dapat mengubah nilai myStrto Job, karena isi dari myStrtidak dapat diubah. Perhatikan bahwa ini tidak berarti bahwa myStrtidak dapat diubah, hanya saja karakter individual dari string literal tidak dapat diubah. Satu-satunya cara untuk mengubahnya myStradalah dengan menetapkannya dengan string baru, seperti ini:
+
+let myStr = "Bob";
+myStr = "Job";
+
+-> Perbaiki penugasan myStrsehingga berisi nilai string Hello Worldmenggunakan pendekatan yang ditunjukkan pada contoh di atas.
+
+Tes
+Menunggu :myStrharus memiliki nilai string Hello World.
+Menunggu :Anda tidak boleh mengubah kode di atas komentar yang ditentukan.
+*/
+
+// Setup
+let myStr = "Jello World";
+
+// Only change code below this line
+myStr = "Hello World"; // Change this line
+// Only change code above this line

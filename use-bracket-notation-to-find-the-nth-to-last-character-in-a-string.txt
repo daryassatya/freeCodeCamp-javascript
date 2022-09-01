@@ -1,0 +1,26 @@
+/*
+Gunakan Notasi Bracket untuk Menemukan Karakter Nth-to-Last dalam sebuah String
+Anda dapat menggunakan prinsip yang sama yang baru saja kita gunakan untuk mengambil karakter terakhir dalam sebuah string untuk mengambil karakter Nth-to-last.
+
+Misalnya, Anda bisa mendapatkan nilai huruf ketiga hingga terakhir dari const firstName = "Augusta"string dengan menggunakanfirstName[firstName.length - 3]
+
+Contoh:
+
+const firstName = "Augusta";
+const thirdToLastLetter = firstName[firstName.length - 3];
+thirdToLastLetterakan memiliki nilai string s.
+
+-> Gunakan notasi braket untuk menemukan karakter kedua hingga terakhir dalam lastNamestring.
+
+Petunjuk: Coba lihat contoh di atas jika Anda buntu.
+
+Tes
+Menunggu :secondToLastLetterOfLastNameseharusnya surat itu c.
+Menunggu :Anda harus menggunakan .lengthuntuk mendapatkan huruf terakhir kedua.
+ */
+
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Change this line
