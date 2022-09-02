@@ -1,0 +1,37 @@
+/*
+Lingkup dan Fungsi Lokal
+
+Variabel yang dideklarasikan dalam suatu fungsi, serta parameter fungsi, memiliki cakupan lokal . Itu berarti mereka hanya terlihat di dalam fungsi itu.
+
+Berikut adalah fungsi myTestdengan variabel lokal yang disebut loc.
+
+function myTest() {
+  const loc = "foo";
+  console.log(loc);
+}
+
+myTest();
+console.log(loc);
+Panggilan myTest()fungsi akan menampilkan string foodi konsol. Garis console.log(loc)(di luar myTestfungsi) akan menimbulkan kesalahan, karena loctidak didefinisikan di luar fungsi.
+
+
+
+-> Editor memiliki dua console.logs untuk membantu Anda melihat apa yang terjadi. Periksa konsol saat Anda membuat kode untuk melihat bagaimana perubahannya. Deklarasikan variabel lokal myVardi dalam myLocalScopedan jalankan tes.
+
+Catatan: Konsol akan tetap menampilkan ReferenceError: myVar is not defined, tetapi ini tidak akan menyebabkan pengujian gagal.
+
+Tes
+Menunggu :Kode tidak boleh berisi myVarvariabel global.
+Menunggu :Anda harus menambahkan myVarvariabel lokal.
+*/
+
+function myLocalScope() {
+  // Only change code below this line
+  let myVar = "Test";
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+console.log('outside myLocalScope', myVar);

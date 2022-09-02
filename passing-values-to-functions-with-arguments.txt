@@ -1,0 +1,28 @@
+/*
+Melewati Nilai ke Fungsi dengan Argumen
+
+Parameter adalah variabel yang bertindak sebagai placeholder untuk nilai yang akan dimasukkan ke fungsi saat dipanggil. Ketika suatu fungsi didefinisikan, biasanya didefinisikan bersama dengan satu atau lebih parameter. Nilai aktual yang dimasukkan (atau "dilewati" ) ke dalam fungsi saat dipanggil dikenal sebagai argumen .
+
+Berikut adalah fungsi dengan dua parameter, param1dan param2:
+
+function testFun(param1, param2) {
+  console.log(param1, param2);
+}
+Kemudian kita bisa memanggil testFunseperti ini: testFun("Hello", "World");. Kami telah melewati dua argumen string, Hellodan World. Di dalam fungsi, param1akan sama dengan string Hellodan param2akan sama dengan string World. Perhatikan bahwa Anda bisa menelepon testFunlagi dengan argumen yang berbeda dan parameter akan mengambil nilai argumen baru.
+
+->
+1.Buat fungsi bernama functionWithArgsyang menerima dua argumen dan menampilkan jumlah mereka ke konsol dev.
+2.Panggil fungsi dengan dua angka sebagai argumen.
+
+Tes
+Menunggu :functionWithArgsharus menjadi fungsi.
+Menunggu :functionWithArgs(1,2)harus keluaran 3.
+Menunggu :functionWithArgs(7,9)harus keluaran 16.
+Menunggu :Anda harus menelepon functionWithArgsdengan dua nomor setelah Anda menentukannya.
+ */
+
+function functionWithArgs(param1, param2){
+  console.log(param1+param2);
+}
+
+functionWithArgs(1, 2);

@@ -1,0 +1,27 @@
+/*
+Memanipulasi Array Dengan pop()
+
+Cara lain untuk mengubah data dalam array adalah dengan .pop()fungsi.
+
+.pop()digunakan untuk mengeluarkan nilai dari akhir array. Kami dapat menyimpan nilai yang muncul ini dengan menetapkannya ke variabel. Dengan kata lain, .pop()menghapus elemen terakhir dari array dan mengembalikan elemen itu.
+
+Jenis entri apa pun dapat dikeluarkan dari array - angka, string, bahkan array bersarang.
+
+const threeArr = [1, 4, 6];
+const oneDown = threeArr.pop();
+console.log(oneDown);
+console.log(threeArr);
+Yang pertama console.logakan menampilkan nilai 6, dan yang kedua akan menampilkan nilai [1, 4].
+
+-> Gunakan .pop()fungsi untuk menghapus item terakhir dari myArraydan menetapkan nilai yang muncul ke variabel baru, removedFromMyArray.
+
+Tes
+Menunggu :myArrayseharusnya hanya berisi [["John", 23]].
+Menunggu :Anda harus menggunakan pop()pada myArray.
+Menunggu :removedFromMyArrayseharusnya hanya berisi ["cat", 2].
+ */
+
+// Setup
+const myArray = [["John", 23], ["cat", 2]];
+const removedFromMyArray = myArray.pop()
+// Only change code below this line

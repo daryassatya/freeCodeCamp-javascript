@@ -1,0 +1,20 @@
+/*
+Ubah Data Array Dengan Indeks
+
+Tidak seperti string, entri array dapat berubah dan dapat diubah secara bebas, bahkan jika array dideklarasikan dengan const.
+
+Contoh
+
+const ourArray = [50, 40, 30];
+ourArray[0] = 15;
+ourArraysekarang memiliki nilai [15, 40, 30].
+
+Catatan: Seharusnya tidak ada spasi antara nama array dan tanda kurung siku, seperti array [0]. Meskipun JavaScript dapat memproses ini dengan benar, ini dapat membingungkan pemrogram lain yang membaca kode Anda.
+
+-> Ubah data yang disimpan di indeks 0menjadi myArraynilai 45.
+ */
+
+// Setup
+const myArray = [18, 64, 99];
+myArray[0] = 45;
+// Only change code below this line

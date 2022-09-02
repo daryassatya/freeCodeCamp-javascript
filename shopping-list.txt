@@ -1,0 +1,20 @@
+/*
+Daftar belanja
+
+-> Buat daftar belanja di variabel myList. Daftar tersebut harus berupa array multidimensi yang berisi beberapa sub-array.
+
+Elemen pertama di setiap sub-array harus berisi string dengan nama item. Elemen kedua harus berupa angka yang mewakili kuantitas yaitu
+
+["Chocolate Bar", 15]
+
+Harus ada setidaknya 5 sub-array dalam daftar.
+
+Tes
+Menunggu :myListharus berupa array.
+Menunggu :Elemen pertama di setiap sub-array Anda semuanya harus berupa string.
+Menunggu :Elemen kedua di setiap sub-array Anda semuanya harus berupa angka.
+Menunggu :Anda harus memiliki setidaknya 5 item dalam daftar Anda.
+ */
+
+const myList = [];
+myList.push(["vga", 20], ['ram', 4], ["mouse", 13], ["monitor", 50], ["keyboard", 80]);

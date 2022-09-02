@@ -1,0 +1,36 @@
+/*
+Akses Array Multi-Dimensi Dengan Indeks
+
+Salah satu cara untuk memikirkan array multi-dimensi , adalah sebagai array dari array . Saat Anda menggunakan tanda kurung untuk mengakses larik Anda, kumpulan tanda kurung pertama mengacu pada entri di larik paling luar (tingkat pertama), dan setiap pasangan tanda kurung tambahan merujuk ke tingkat entri berikutnya di dalam.
+
+Contoh
+
+const arr = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14]
+];
+
+const subarray = arr[3];
+const nestedSubarray = arr[3][0];
+const element = arr[3][0][1];
+Dalam contoh ini, subarraymemiliki nilai [[10, 11, 12], 13, 14], nestedSubarraymemiliki nilai [10, 11, 12], dan elementmemiliki nilai 11.
+
+Catatan: Seharusnya tidak ada spasi antara nama array dan tanda kurung siku, seperti array [0][0]dan bahkan ini array [0] [0]tidak diperbolehkan. Meskipun JavaScript dapat memproses ini dengan benar, ini dapat membingungkan pemrogram lain yang membaca kode Anda.
+
+-> Menggunakan notasi braket pilih elemen dari myArraysedemikian rupa sehingga myDatasama dengan 8.
+
+Tes
+Menunggu :myDataharus sama dengan 8.
+Menunggu :Anda harus menggunakan notasi braket untuk membaca nilai yang benar dari myArray.
+ */
+
+const myArray = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14],
+];
+
+const myData = myArray[2][1];

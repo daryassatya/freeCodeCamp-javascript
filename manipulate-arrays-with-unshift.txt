@@ -1,0 +1,26 @@
+/*
+Memanipulasi Array Dengan unshift()
+
+Anda tidak hanya dapat shiftelemen dari awal array, Anda juga dapat unshiftelemen ke awal array yaitu menambahkan elemen di depan array.
+
+.unshift()bekerja persis seperti .push(), tetapi alih-alih menambahkan elemen di akhir array, unshift()tambahkan elemen di awal array.
+
+Contoh:
+
+const ourArray = ["Stimpson", "J", "cat"];
+ourArray.shift();
+ourArray.unshift("Happy");
+Setelah shift, ourArrayakan memiliki nilai ["J", "cat"]. Setelah unshift, ourArrayakan memiliki nilai ["Happy", "J", "cat"].
+
+-> Setelah shift, ourArrayakan memiliki nilai ["J", "cat"]. Setelah unshift, ourArrayakan memiliki nilai ["Happy", "J", "cat"].
+
+Tes
+Menunggu :myArrayseharusnya sekarang [["Paul", 35], ["dog", 3]].
+ */
+
+// Setup
+const myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+myArray.unshift(["Paul", 35]);
+
+// Only change code below this line

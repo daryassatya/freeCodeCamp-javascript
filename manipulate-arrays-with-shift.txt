@@ -1,0 +1,25 @@
+/*
+Memanipulasi Array Dengan shift()
+
+pop()selalu menghapus elemen terakhir dari array. Bagaimana jika Anda ingin menghapus yang pertama?
+
+Di situlah .shift()masuk. Ia bekerja seperti .pop(), kecuali menghapus elemen pertama, bukan yang terakhir.
+
+Contoh:
+
+const ourArray = ["Stimpson", "J", ["cat"]];
+const removedFromOurArray = ourArray.shift();
+removedFromOurArrayakan memiliki nilai string Stimpson, dan ourArrayakan memiliki ["J", ["cat"]].
+
+-> Gunakan .shift()fungsi untuk menghapus item pertama dari myArraydan menetapkan nilai "digeser" ke variabel baru, removedFromMyArray.
+
+Tes
+Menunggu :myArraysekarang harus sama [["dog", 3]].
+Menunggu :removedFromMyArrayharus mengandung ["John", 23].
+ */
+
+// Setup
+const myArray = [["John", 23], ["dog", 3]];
+const removedFromMyArray = myArray.shift();
+
+// Only change code below this line

@@ -1,0 +1,38 @@
+/*
+Lingkup dan Fungsi Global
+
+Dalam JavaScript, ruang lingkup mengacu pada visibilitas variabel. Variabel yang didefinisikan di luar blok fungsi memiliki cakupan Global . Ini berarti, mereka dapat dilihat di mana-mana dalam kode JavaScript Anda.
+
+Variabel yang dideklarasikan tanpa kata kunci letatau constsecara otomatis dibuat dalam globalruang lingkup. Ini dapat membuat konsekuensi yang tidak diinginkan di tempat lain dalam kode Anda atau saat menjalankan fungsi lagi. Anda harus selalu mendeklarasikan variabel Anda dengan letor const.
+
+-> Menggunakan let or const, mendeklarasikan variabel global bernama myGlobaldi luar fungsi apa pun. Inisialisasi dengan nilai 10.
+
+Di dalam fungsi , fun1tetapkan tanpa5 menggunakan , atau kata kunci.oopsGlobal varletconst
+
+Tes
+Menunggu :myGlobalharus didefinisikan
+Menunggu :myGlobalharus memiliki nilai10
+Menunggu :myGlobalharus dideklarasikan menggunakan kata kunci letorconst
+Menunggu :oopsGlobalharus menjadi variabel global dan memiliki nilai5
+ */
+
+// Declare the myGlobal variable below this line
+const myGlobal = 10;
+
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+  oopsGlobal = 5;
+}
+
+// Only change code above this line
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}

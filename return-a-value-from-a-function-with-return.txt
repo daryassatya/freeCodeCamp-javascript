@@ -1,0 +1,29 @@
+/*
+Mengembalikan Nilai dari Fungsi dengan Pengembalian
+Kita dapat meneruskan nilai ke dalam suatu fungsi dengan argumen . Anda dapat menggunakan returnpernyataan untuk mengirim nilai kembali dari suatu fungsi.
+
+Contoh
+
+function plusThree(num) {
+  return num + 3;
+}
+
+const answer = plusThree(5);
+answermemiliki nilai 8.
+
+plusThreemengambil argumen untuk numdan mengembalikan nilai yang sama dengan num + 3.
+
+-> Buat fungsi timesFiveyang menerima satu argumen, mengalikannya dengan 5, dan mengembalikan nilai baru.
+
+Tes
+Menunggu :timesFiveseharusnya fungsi
+Menunggu :timesFive(5)harus kembali25
+Menunggu :timesFive(2)harus kembali10
+Menunggu :timesFive(0)harus kembali0
+ */
+
+function timesFive(num){
+  return num * 5;
+}
+
+timesFive(3);

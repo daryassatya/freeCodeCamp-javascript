@@ -1,0 +1,28 @@
+/*
+Tulis JavaScript yang Dapat Digunakan Kembali dengan Fungsi
+
+Dalam JavaScript, kita dapat membagi kode kita menjadi bagian-bagian yang dapat digunakan kembali yang disebut functions .
+
+Berikut ini contoh fungsi:
+
+function functionName() {
+  console.log("Hello World");
+}
+
+Anda dapat memanggil atau memanggil fungsi ini dengan menggunakan namanya diikuti dengan tanda kurung, seperti ini: functionName();Setiap kali fungsi dipanggil, ia akan mencetak pesan Hello Worlddi konsol dev. Semua kode di antara kurung kurawal akan dieksekusi setiap kali fungsi dipanggil.
+
+->
+1. Buat fungsi yang disebut reusableFunctionyang mencetak string Hi Worldke konsol dev.
+2. Panggil fungsi.
+
+Tes
+Menunggu :reusableFunctionharus menjadi fungsi.
+Menunggu :Jika reusableFunctiondipanggil, itu harus menampilkan string Hi Worldke konsol.
+Menunggu :Anda harus menelepon reusableFunctionsetelah ditentukan.
+ */
+
+function reusableFunction(){
+  console.log("Hi World");
+}
+
+reusableFunction();
