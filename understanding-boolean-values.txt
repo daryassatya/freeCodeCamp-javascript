@@ -1,0 +1,21 @@
+/*
+Memahami Nilai Boolean
+
+Tipe data lainnya adalah Boolean . Boolean mungkin hanya salah satu dari dua nilai: trueatau false. Mereka pada dasarnya adalah sakelar hidup-mati kecil, di mana truehidup dan falsemati. Kedua negara ini saling eksklusif.
+
+Catatan: Nilai Boolean tidak pernah ditulis dengan tanda kutip. String "true"dan "false"bukan Boolean dan tidak memiliki arti khusus dalam JavaScript.
+
+-> Ubah welcomeToBooleansfungsi agar kembali truealih-alih falsesaat tombol jalankan diklik.
+
+Tes
+Menunggu :Fungsi welcomeToBooleans()harus mengembalikan nilai Boolean ( trueatau false).
+Menunggu :welcomeToBooleans()harus kembali true.
+*/
+
+function welcomeToBooleans() {
+  // Only change code below this line
+
+  return true; // Change this line
+
+  // Only change code above this line
+}

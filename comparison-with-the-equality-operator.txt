@@ -1,0 +1,39 @@
+/*
+Perbandingan dengan Operator Kesetaraan
+
+Ada banyak operator perbandingan dalam JavaScript. Semua operator ini mengembalikan boolean trueatau falsenilai.
+
+Operator yang paling dasar adalah operator kesetaraan ==. Operator kesetaraan membandingkan dua nilai dan mengembalikan truejika keduanya setara atau falsetidak. Perhatikan bahwa kesetaraan berbeda dari penugasan ( =), yang memberikan nilai di sebelah kanan operator ke variabel di sebelah kiri.
+
+function equalityTest(myVal) {
+  if (myVal == 10) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+Jika myValsama dengan 10, operator kesetaraan kembali true, sehingga kode dalam kurung kurawal akan dijalankan, dan fungsi akan kembali Equal. Jika tidak, fungsi akan kembali Not Equal. Agar JavaScript dapat membandingkan dua tipe data yang berbeda (misalnya, numbersdan strings), JavaScript harus mengonversi satu tipe ke tipe lainnya. Ini dikenal sebagai Pemaksaan Tipe. Setelah itu, bagaimanapun, dapat membandingkan istilah sebagai berikut:
+
+1   ==  1  // true
+1   ==  2  // false
+1   == '1' // true
+"3" ==  3  // true
+
+-> Tambahkan operator kesetaraan ke baris yang ditunjukkan sehingga fungsi akan mengembalikan string Equalketika valsetara dengan 12.
+
+tes
+Menunggu :testEqual(10)harus mengembalikan stringNot Equal
+Menunggu :testEqual(12)harus mengembalikan stringEqual
+Menunggu :testEqual("12")harus mengembalikan stringEqual
+Menunggu :Anda harus menggunakan ==operator
+*/
+
+// Setup
+function testEqual(val) {
+  if (val == 12) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+testEqual(10);

@@ -1,0 +1,50 @@
+/*
+Gunakan Logika Bersyarat dengan Pernyataan If
+
+ifpernyataan digunakan untuk membuat keputusan dalam kode. Kata kunci ifmemberi tahu JavaScript untuk mengeksekusi kode dalam kurung kurawal dalam kondisi tertentu, yang ditentukan dalam tanda kurung. Kondisi ini dikenal sebagai Booleankondisi dan mereka mungkin hanya trueatau false.
+
+Ketika kondisi bernilai true, program mengeksekusi pernyataan di dalam kurung kurawal. Ketika kondisi Boolean bernilai false, pernyataan di dalam kurung kurawal tidak akan dieksekusi.
+
+Kode semu
+
+if ( kondisi benar ) {
+  pernyataan dijalankan
+}
+Contoh
+
+function test (myCondition) {
+  if (myCondition) {
+    return "It was true";
+  }
+  return "It was false";
+}
+
+test(true);
+test(false);
+test(true)mengembalikan string It was true, dan test(false)mengembalikan string It was false.
+
+Ketika testdipanggil dengan nilai true, ifpernyataan mengevaluasi myConditionuntuk melihat apakah itu trueatau tidak. Karena itu true, fungsi kembali It was true. Ketika kita memanggil testdengan nilai false, myConditionbukan dan pernyataan dalam kurung kurawal tidak dieksekusi dan fungsi kembali .trueIt was false
+
+-> Buat ifpernyataan di dalam fungsi untuk mengembalikan Yes, that was truejika parameternya wasThatTrueadalah truedan mengembalikan No, that was falsesebaliknya.
+
+tes
+Menunggu :trueOrFalseseharusnya fungsi
+Menunggu :trueOrFalse(true)harus mengembalikan string
+Menunggu :trueOrFalse(false)harus mengembalikan string
+Menunggu :trueOrFalse(true)harus mengembalikan stringYes, that was true
+Menunggu :trueOrFalse(false)harus mengembalikan stringNo, that was false
+*/
+
+function trueOrFalse(wasThatTrue) {
+  // Only change code below this line
+
+  // bentuk cepat 
+  // if(wasThatTrue) return "Yes, that was true";
+
+  if(wasThatTrue){
+    return "Yes, that was true"
+  }
+  return "No, that was false";
+  // Only change code above this line
+
+}

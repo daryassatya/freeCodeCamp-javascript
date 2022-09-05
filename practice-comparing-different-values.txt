@@ -1,0 +1,34 @@
+/*
+Berlatih membandingkan nilai yang berbeda
+
+Dalam dua tantangan terakhir, kita mempelajari tentang operator persamaan ( ==) dan operator persamaan ketat ( ===). Mari kita lakukan tinjauan singkat dan berlatih menggunakan operator ini lagi.
+
+Jika nilai yang dibandingkan tidak bertipe sama, operator kesetaraan akan melakukan konversi tipe, lalu mengevaluasi nilainya. Namun, operator kesetaraan yang ketat akan membandingkan tipe data dan nilai apa adanya, tanpa mengonversi satu tipe ke tipe lainnya.
+
+Contoh
+
+3 == '3'kembali truekarena JavaScript melakukan konversi tipe dari string ke angka. 3 === '3'mengembalikan false karena tipenya berbeda dan konversi tipe tidak dilakukan.
+
+Catatan: Dalam JavaScript, Anda dapat menentukan jenis variabel atau nilai dengan typeofoperator, sebagai berikut:
+
+typeof 3
+typeof '3'
+typeof 3mengembalikan string number, dan typeof '3'mengembalikan string string.
+
+-> Fungsi compareEqualitydi editor membandingkan dua nilai menggunakan operator persamaan. Ubah fungsi sehingga mengembalikan string Equalhanya ketika nilainya benar-benar sama.
+
+tes
+Menunggu :compareEquality(10, "10")harus mengembalikan stringNot Equal
+Menunggu :compareEquality("20", 20)harus mengembalikan stringNot Equal
+Menunggu :Anda harus menggunakan ===operator
+*/
+
+// Setup
+function compareEquality(a, b) {
+  if (a === b) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+compareEquality(10, "10");

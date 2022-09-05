@@ -1,0 +1,35 @@
+/*
+Antre
+
+Dalam Ilmu Komputer, antrian adalah Struktur Data abstrak tempat item disimpan secara berurutan. Item baru dapat ditambahkan di belakang antrian dan item lama diambil dari depan antrian.
+
+-> Tulis fungsi nextInLineyang menggunakan array ( arr) dan angka ( item) sebagai argumen.
+
+Tambahkan nomor ke akhir array, lalu hapus elemen pertama dari array.
+
+Fungsi nextInLinekemudian harus mengembalikan elemen yang telah dihapus.
+
+Tes
+Menunggu :nextInLine([], 5)harus mengembalikan nomor.
+Menunggu :nextInLine([], 1)harus kembali1
+Menunggu :nextInLine([2], 1)harus kembali2
+Menunggu :nextInLine([5,6,7,8,9], 1)harus kembali5
+Menunggu :Setelah nextInLine(testArr, 10), testArr[4]seharusnya10
+*/
+
+function nextInLine(arr, item) {
+  // Only change code below this line
+  arr.push(item);
+  item = arr.shift();
+  
+  return item;
+  // Only change code above this line
+}
+
+// Setup
+const testArr = [1, 2, 3, 4, 5];
+
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));

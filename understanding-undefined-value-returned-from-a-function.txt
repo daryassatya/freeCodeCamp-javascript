@@ -1,0 +1,41 @@
+/*
+Memahami Nilai Tidak Terdefinisi yang dikembalikan dari Fungsi
+
+Suatu fungsi dapat menyertakan returnpernyataan tetapi tidak harus. Jika fungsi tidak memiliki returnpernyataan, saat Anda memanggilnya, fungsi memproses kode dalam tetapi nilai yang dikembalikan adalah undefined.
+
+Contoh
+
+let sum = 0;
+
+function addSum(num) {
+  sum = sum + num;
+}
+
+addSum(3);
+addSumadalah fungsi tanpa returnpernyataan. Fungsi akan mengubah sumvariabel global tetapi nilai yang dikembalikan dari fungsi tersebut adalah undefined.
+
+-> Buat fungsi addFivetanpa argumen apa pun. Fungsi ini menambahkan 5 ke sumvariabel, tetapi nilai yang dikembalikan adalah undefined.
+
+tes
+Menunggu :addFiveharus menjadi fungsi.
+Menunggu :Setelah kedua fungsi berjalan, sumnilainya harus sama dengan 8.
+Menunggu :Nilai yang dikembalikan dari addFiveseharusnya undefined.
+Menunggu :Di dalam addFivefungsi, Anda harus menambahkan 5ke sumvariabel.
+*/
+
+// Setup
+let sum = 0;
+
+function addThree() {
+  sum = sum + 3;
+}
+
+// Only change code below this line
+
+function addFive() {
+  sum += 5;
+}
+// Only change code above this line
+
+addThree();
+addFive();

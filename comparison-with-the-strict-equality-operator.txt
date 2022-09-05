@@ -1,0 +1,31 @@
+/*
+Perbandingan dengan Operator Kesetaraan Ketat
+
+Persamaan ketat ( ===) adalah pasangan dari operator persamaan ( ==). Namun, tidak seperti operator kesetaraan, yang mencoba mengonversi kedua nilai yang dibandingkan dengan tipe umum, operator kesetaraan ketat tidak melakukan konversi tipe.
+
+Jika nilai yang dibandingkan memiliki tipe yang berbeda, mereka dianggap tidak sama, dan operator persamaan yang ketat akan mengembalikan false.
+
+Contoh
+
+3 ===  3  // true
+3 === '3' // false
+Pada contoh kedua, 3adalah Numbertipe dan '3'merupakan Stringtipe.
+
+-> Gunakan operator persamaan ketat dalam ifpernyataan sehingga fungsi akan mengembalikan string Equalketika valbenar-benar sama dengan 7.
+
+tes
+Menunggu :testStrict(10)harus mengembalikan stringNot Equal
+Menunggu :testStrict(7)harus mengembalikan stringEqual
+Menunggu :testStrict("7")harus mengembalikan stringNot Equal
+Menunggu :Anda harus menggunakan ===operator
+*/
+
+// Setup
+function testStrict(val) {
+  if (val === 7) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+testStrict(10);

@@ -1,0 +1,26 @@
+/*
+Tugas dengan Nilai yang Dikembalikan
+
+Jika Anda ingat dari diskusi kami tentang Menyimpan Nilai dengan Operator Penugasan , semua yang ada di sebelah kanan tanda sama dengan diselesaikan sebelum nilai ditetapkan. Ini berarti kita dapat mengambil nilai balik dari suatu fungsi dan menetapkannya ke variabel.
+
+Asumsikan kita telah mendefinisikan fungsi sumyang menjumlahkan dua angka bersama-sama, maka:
+
+ourSum = sum(5, 12);
+akan memanggil sumfungsi, yang mengembalikan nilai 17dan menetapkannya ke ourSumvariabel.
+
+-> Panggil processArgfungsi dengan argumen 7dan tetapkan nilai kembaliannya ke variabel processed.
+
+tes
+Menunggu :processedharus memiliki nilai2
+Menunggu :Anda harus menugaskan processArgkeprocessed
+*/
+
+// Setup
+let processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+// Only change code below this line
+processed = processArg(7)

@@ -1,0 +1,34 @@
+/*
+Lingkup Global vs. Lokal dalam Fungsi
+
+Dimungkinkan untuk memiliki variabel lokal dan global dengan nama yang sama. Ketika Anda melakukan ini, variabel lokal lebih diutamakan daripada variabel global.
+
+Dalam contoh ini:
+
+const someVar = "Hat";
+
+function myFun() {
+  const someVar = "Head";
+  return someVar;
+}
+Fungsi myFunakan mengembalikan string Headkarena versi lokal dari variabel hadir.
+
+->Tambahkan variabel lokal ke myOutfitfungsi untuk mengganti nilai outerWeardengan string sweater.
+
+tes
+Menunggu :Anda tidak boleh mengubah nilai global outerWear.
+Menunggu :myOutfitharus mengembalikan string sweater.
+Menunggu :Anda tidak boleh mengubah pernyataan pengembalian.
+ */
+
+// Setup
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+  const outerWear = "sweater";
+  // Only change code above this line
+  return outerWear;
+}
+
+myOutfit();
