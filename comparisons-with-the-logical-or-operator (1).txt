@@ -1,0 +1,50 @@
+/*
+Perbandingan dengan Logika Atau Operator
+
+Logika atau operator ( ||) kembali truejika salah satu operan adalah true. Jika tidak, ia kembali false.
+
+Logika atau operator terdiri dari dua simbol pipa: ( ||). Ini biasanya dapat ditemukan di antara tombol Backspace dan Enter Anda.
+
+Pola di bawah ini akan terlihat familier dari titik jalan sebelumnya:
+
+if (num > 10) {
+  return "No";
+}
+if (num < 5) {
+  return "No";
+}
+return "Yes";
+akan kembali Yeshanya jika numantara 5dan 10(5 dan 10 disertakan). Logika yang sama dapat ditulis sebagai:
+
+if (num > 10 || num < 5) {
+  return "No";
+}
+return "Yes";
+
+-> Gabungkan dua ifpernyataan menjadi satu pernyataan yang mengembalikan string Outsidejika valtidak antara 10dan 20, inklusif. Jika tidak, kembalikan string Inside.
+
+Tes
+Menunggu :Anda harus menggunakan ||operator sekali
+Menunggu :Anda seharusnya hanya memiliki satu ifpernyataan
+Menunggu :testLogicalOr(0)harus mengembalikan stringOutside
+Menunggu :testLogicalOr(9)harus mengembalikan stringOutside
+Menunggu :testLogicalOr(10)harus mengembalikan stringInside
+Menunggu :testLogicalOr(15)harus mengembalikan stringInside
+Menunggu :testLogicalOr(19)harus mengembalikan stringInside
+Menunggu :testLogicalOr(20)harus mengembalikan stringInside
+Menunggu :testLogicalOr(21)harus mengembalikan stringOutside
+Menunggu :testLogicalOr(25)harus mengembalikan stringOutside
+*/
+
+function testLogicalOr(val) {
+  // Only change code below this line
+
+  if (val < 10 || val > 20) {
+    return "Outside";
+  }
+
+  // Only change code above this line
+  return "Inside";
+}
+
+testLogicalOr(15);

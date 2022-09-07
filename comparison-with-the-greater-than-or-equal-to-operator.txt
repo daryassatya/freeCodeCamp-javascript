@@ -1,0 +1,35 @@
+/*
+Perbandingan dengan Operator Lebih Besar Atau Sama Dengan
+
+Operator yang lebih besar dari atau sama dengan ( >=) membandingkan nilai dua angka. Jika angka di sebelah kiri lebih besar dari atau sama dengan angka di sebelah kanan, ia mengembalikan true. Jika tidak, ia kembali false.
+
+Seperti operator kesetaraan, operator yang lebih besar dari atau sama dengan akan mengonversi tipe data saat membandingkan.
+
+Contoh
+
+6   >=  6  // true
+7   >= '3' // true
+2   >=  3  // false
+'7' >=  9  // false
+Tambahkan operator yang lebih besar dari atau sama dengan ke baris yang ditunjukkan sehingga pernyataan pengembalian masuk akal.
+
+Tes
+Menunggu :testGreaterOrEqual(0)harus mengembalikan stringLess than 10
+Menunggu :testGreaterOrEqual(9)harus mengembalikan stringLess than 10
+Menunggu :testGreaterOrEqual(10)harus mengembalikan string10 or Over
+Menunggu :testGreaterOrEqual(11)harus mengembalikan string10 or Over
+ */
+
+function testGreaterOrEqual(val) {
+  if (val >= 20) {  // Change this line
+    return "20 or Over";
+  }
+
+  if (val >= 10) {  // Change this line
+    return "10 or Over";
+  }
+
+  return "Less than 10";
+}
+
+testGreaterOrEqual(10);

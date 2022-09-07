@@ -1,0 +1,38 @@
+/*
+Memperkenalkan Pernyataan Lain
+
+Ketika suatu kondisi untuk suatu ifpernyataan benar, blok kode yang mengikutinya akan dieksekusi. Bagaimana bila kondisi itu salah? Biasanya tidak akan terjadi apa-apa. Dengan sebuah elsepernyataan, blok kode alternatif dapat dieksekusi.
+
+if (num > 10) {
+  return "Bigger than 10";
+} else {
+  return "10 or Less";
+}
+
+-> Menggabungkan ifpernyataan menjadi satu if/elsepernyataan.
+
+Tes
+Menunggu :Anda seharusnya hanya memiliki satu ifpernyataan di editor
+Menunggu :Anda harus menggunakan elsepernyataan
+Menunggu :testElse(4)harus mengembalikan string5 or Smaller
+Menunggu :testElse(5)harus mengembalikan string5 or Smaller
+Menunggu :testElse(6)harus mengembalikan stringBigger than 5
+Menunggu :testElse(10)harus mengembalikan stringBigger than 5
+Menunggu :Anda tidak boleh mengubah kode di atas atau di bawah komentar yang ditentukan.
+*/
+
+function testElse(val) {
+  let result = "";
+  // Only change code below this line
+
+  if (val > 5) {
+    result = "Bigger than 5";
+  } else {
+    result = "5 or Smaller";
+  }
+
+  // Only change code above this line
+  return result;
+}
+
+testElse(4);

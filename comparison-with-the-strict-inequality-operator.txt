@@ -1,0 +1,30 @@
+/*
+Perbandingan dengan Operator Ketimpangan Ketat
+
+Operator ketidaksetaraan ketat ( !==) adalah kebalikan logis dari operator persamaan ketat. Itu berarti "Strictly Not Equal" dan kembali falsedi mana persamaan yang ketat akan kembali truedan sebaliknya . Operator ketidaksetaraan ketat tidak akan mengonversi tipe data.
+
+Contoh
+
+3 !==  3  // false
+3 !== '3' // true
+4 !==  3  // true
+
+-> Tambahkan operator ketidaksetaraan ketat ke ifpernyataan sehingga fungsi akan mengembalikan string Not Equalketika valtidak sepenuhnya sama dengan17
+
+Tes
+Menunggu :testStrictNotEqual(17)harus mengembalikan stringEqual
+Menunggu :testStrictNotEqual("17")harus mengembalikan stringNot Equal
+Menunggu :testStrictNotEqual(12)harus mengembalikan stringNot Equal
+Menunggu :testStrictNotEqual("bob")harus mengembalikan stringNot Equal
+Menunggu :Anda harus menggunakan !==operator
+*/
+
+// Setup
+function testStrictNotEqual(val) {
+  if (val !== 17) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+testStrictNotEqual(10);

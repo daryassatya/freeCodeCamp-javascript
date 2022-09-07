@@ -1,0 +1,40 @@
+/*
+Perbandingan dengan Greater Than Operator
+
+Operator lebih besar dari ( >) membandingkan nilai dua angka. Jika angka di sebelah kiri lebih besar dari angka di sebelah kanan, ia kembali true. Jika tidak, ia kembali false.
+
+Seperti operator kesetaraan, operator yang lebih besar dari akan mengonversi tipe data nilai saat membandingkan.
+
+Contoh
+
+5   >  3  // true
+7   > '3' // true
+2   >  3  // false
+'1' >  9  // false
+
+-> Tambahkan operator lebih besar dari ke baris yang ditunjukkan sehingga pernyataan pengembalian masuk akal.
+
+Tes
+Menunggu :testGreaterThan(0)harus mengembalikan string10 or Under
+Menunggu :testGreaterThan(10)harus mengembalikan string10 or Under
+Menunggu :testGreaterThan(11)harus mengembalikan stringOver 10
+Menunggu :testGreaterThan(99)harus mengembalikan stringOver 10
+Menunggu :testGreaterThan(100)harus mengembalikan stringOver 10
+Menunggu :testGreaterThan(101)harus mengembalikan stringOver 100
+Menunggu :testGreaterThan(150)harus mengembalikan stringOver 100
+Menunggu :Anda harus menggunakan >operator setidaknya dua kali
+*/
+
+function testGreaterThan(val) {
+  if (val > 100) {  // Change this line
+    return "Over 100";
+  }
+
+  if (val > 10) {  // Change this line
+    return "Over 10";
+  }
+
+  return "10 or Under";
+}
+
+testGreaterThan(10);

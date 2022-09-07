@@ -1,0 +1,39 @@
+/*
+Perbandingan dengan Operator Kurang Dari
+
+Operator kurang dari ( <) membandingkan nilai dua angka. Jika angka di sebelah kiri lebih kecil dari angka di sebelah kanan, ia akan kembali true. Jika tidak, ia kembali false. Seperti operator kesetaraan, operator less than mengonversi tipe data saat membandingkan.
+
+Contoh
+
+2   < 5 // true
+'3' < 7 // true
+5   < 5 // false
+3   < 2 // false
+'8' < 4 // false
+
+-> Tambahkan operator kurang dari ke baris yang ditunjukkan sehingga pernyataan pengembalian masuk akal.
+
+Tes
+Menunggu :testLessThan(0)harus mengembalikan stringUnder 25
+Menunggu :testLessThan(24)harus mengembalikan stringUnder 25
+Menunggu :testLessThan(25)harus mengembalikan stringUnder 55
+Menunggu :testLessThan(54)harus mengembalikan stringUnder 55
+Menunggu :testLessThan(55)harus mengembalikan string55 or Over
+Menunggu :testLessThan(99)harus mengembalikan string55 or Over
+Menunggu :Anda harus menggunakan <operator setidaknya dua kali
+
+*/
+
+function testLessThan(val) {
+  if (val < 25) {  // Change this line
+    return "Under 25";
+  }
+
+  if (val < 55) {  // Change this line
+    return "Under 55";
+  }
+
+  return "55 or Over";
+}
+
+testLessThan(10);

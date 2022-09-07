@@ -1,0 +1,47 @@
+/*
+Perbandingan dengan Logika Dan Operator
+
+Terkadang Anda perlu menguji lebih dari satu hal sekaligus. Logika dan operator ( &&) mengembalikan truejika dan hanya jika operan di kiri dan kanannya benar.
+
+Efek yang sama dapat dicapai dengan menyarangkan pernyataan if di dalam if yang lain:
+
+if (num > 5) {
+  if (num < 10) {
+    return "Yes";
+  }
+}
+return "No";
+hanya akan kembali Yesjika numlebih besar dari 5dan kurang dari 10. Logika yang sama dapat ditulis sebagai:
+
+if (num > 5 && num < 10) {
+  return "Yes";
+}
+return "No";
+
+-> Ganti dua pernyataan if dengan satu pernyataan, menggunakan &&operator, yang akan mengembalikan string Yesjika valkurang dari atau sama dengan 50dan lebih besar dari atau sama dengan 25. Jika tidak, akan mengembalikan string No.
+
+Tes
+Menunggu :Anda harus menggunakan &&operator sekali
+Menunggu :Anda seharusnya hanya memiliki satu ifpernyataan
+Menunggu :testLogicalAnd(0)harus mengembalikan stringNo
+Menunggu :testLogicalAnd(24)harus mengembalikan stringNo
+Menunggu :testLogicalAnd(25)harus mengembalikan stringYes
+Menunggu :testLogicalAnd(30)harus mengembalikan stringYes
+Menunggu :testLogicalAnd(50)harus mengembalikan stringYes
+Menunggu :testLogicalAnd(51)harus mengembalikan stringNo
+Menunggu :testLogicalAnd(75)harus mengembalikan stringNo
+Menunggu :testLogicalAnd(80)harus mengembalikan stringNo
+*/
+
+function testLogicalAnd(val) {
+  // Only change code below this line
+
+  if (val <= 50 && val >= 25) {
+    return "Yes";
+  }
+
+  // Only change code above this line
+  return "No";
+}
+
+testLogicalAnd(10);
