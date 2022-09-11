@@ -1,0 +1,61 @@
+/*
+Menambahkan Opsi Default di Pernyataan Beralih
+
+Dalam sebuah switchpernyataan, Anda mungkin tidak dapat menentukan semua nilai yang mungkin sebagai casepernyataan. Sebagai gantinya, Anda dapat menambahkan defaultpernyataan yang akan dieksekusi jika tidak ada casepernyataan yang cocok ditemukan. Anggap saja seperti elsepernyataan terakhir dalam sebuah if/elserantai.
+
+Sebuah defaultpernyataan harus menjadi kasus terakhir.
+
+switch (num) {
+  case value1:
+    statement1;
+    break;
+  case value2:
+    statement2;
+    break;
+...
+  default:
+    defaultStatement;
+    break;
+}
+
+-> Tulis pernyataan switch untuk mengatur answerkondisi berikut:
+a- apple
+b- bird
+c- cat
+default-stuff
+
+Tes
+Menunggu :switchOfStuff("a")harus mengembalikan stringapple
+Menunggu :switchOfStuff("b")harus mengembalikan stringbird
+Menunggu :switchOfStuff("c")harus mengembalikan stringcat
+Menunggu :switchOfStuff("d")harus mengembalikan stringstuff
+Menunggu :switchOfStuff(4)harus mengembalikan stringstuff
+Menunggu :Anda tidak boleh menggunakan pernyataan ifatau elsepernyataan apa pun
+Menunggu :Anda harus menggunakan defaultpernyataan
+Menunggu :Anda harus memiliki setidaknya 3 breakpernyataan
+ */
+
+function switchOfStuff(val) {
+  let answer = "";
+  // Only change code below this line
+  switch (val){
+    case 'a':
+      answer = "apple";
+      break;
+    case 'b':
+      answer = "bird";
+      break;
+    case 'c':
+      answer =  "cat";
+      break;
+    default:
+      answer =  "stuff";
+      break;
+  }
+
+
+  // Only change code above this line
+  return answer;
+}
+
+switchOfStuff(1);

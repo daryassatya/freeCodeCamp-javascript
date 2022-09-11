@@ -1,0 +1,46 @@
+/*
+Bangun Objek JavaScript
+Anda mungkin pernah mendengar istilah tersebut objectsebelumnya.
+
+Objek mirip dengan arrays, kecuali bahwa alih-alih menggunakan indeks untuk mengakses dan memodifikasi datanya, Anda mengakses data dalam objek melalui apa yang disebut properties.
+
+Objek berguna untuk menyimpan data secara terstruktur, dan dapat mewakili objek dunia nyata, seperti kucing.
+
+Berikut ini contoh objek kucing:
+
+const cat = {
+  "name": "Whiskers",
+  "legs": 4,
+  "tails": 1,
+  "enemies": ["Water", "Dogs"]
+};
+Dalam contoh ini, semua properti disimpan sebagai string, seperti name, legs, dan tails. Namun, Anda juga dapat menggunakan angka sebagai properti. Anda bahkan dapat menghilangkan tanda kutip untuk properti string satu kata, sebagai berikut:
+
+const anotherObject = {
+  make: "Ford",
+  5: "five",
+  "model": "focus"
+};
+Namun, jika objek Anda memiliki properti non-string, JavaScript akan secara otomatis mengetikkannya sebagai string.
+
+-> Buatlah objek yang merepresentasikan nama anjing myDogyang berisi properti name(string), legs, tailsdan friends.
+
+Anda dapat mengatur properti objek ini ke nilai apa pun yang Anda inginkan, selama namestring, legsdan tailsangka, dan friendsarray.
+
+Tes
+Menunggu :myDogharus berisi properti namedan harus berupa string.
+Menunggu :myDogharus berisi properti legsdan harus berupa number.
+Menunggu :myDogharus berisi properti tailsdan harus berupa number.
+Menunggu :myDogharus berisi properti friendsdan harus berupa array.
+Menunggu :myDogseharusnya hanya berisi semua properti yang diberikan.
+*/
+
+const myDog = {
+  // Only change code below this line
+  name : "Doggy",
+  legs : 4,
+  tails : 1,
+  friends : ["Animals"]
+
+  // Only change code above this line
+};

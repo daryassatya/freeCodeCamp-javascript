@@ -1,0 +1,66 @@
+/*
+Beberapa Opsi Identik dalam Pernyataan Beralih
+
+Jika breakpernyataan dihilangkan dari switchpernyataan case, pernyataan berikut casedijalankan sampai a breakditemukan. Jika Anda memiliki beberapa input dengan output yang sama, Anda dapat merepresentasikannya dalam switchpernyataan seperti ini:
+
+let result = "";
+switch (val) {
+  case 1:
+  case 2:
+  case 3:
+    result = "1, 2, or 3";
+    break;
+  case 4:
+    result = "4 alone";
+}
+Kasus untuk 1, 2, dan 3 semuanya akan menghasilkan hasil yang sama.
+
+-> Tulis pernyataan sakelar untuk disetel answeruntuk rentang berikut:
+1-3- Low
+4-6- Mid
+7-9-High
+
+Catatan: Anda harus memiliki casepernyataan untuk setiap nomor dalam rentang.
+
+Tes
+Menunggu :sequentialSizes(1)harus mengembalikan stringLow
+Menunggu :sequentialSizes(2)harus mengembalikan stringLow
+Menunggu :sequentialSizes(3)harus mengembalikan stringLow
+Menunggu :sequentialSizes(4)harus mengembalikan stringMid
+Menunggu :sequentialSizes(5)harus mengembalikan stringMid
+Menunggu :sequentialSizes(6)harus mengembalikan stringMid
+Menunggu :sequentialSizes(7)harus mengembalikan stringHigh
+Menunggu :sequentialSizes(8)harus mengembalikan stringHigh
+Menunggu :sequentialSizes(9)harus mengembalikan stringHigh
+Menunggu :Anda tidak boleh menggunakan pernyataan ifatau elsepernyataan apa pun
+Menunggu :Anda harus memiliki sembilan casepernyataan
+ */
+
+function sequentialSizes(val) {
+  let answer = "";
+  // Only change code below this line
+
+switch (val) {
+  case 1:
+  case 2:
+  case 3:
+    answer = "Low";
+    break;
+  case 4:
+  case 5:
+  case 6:
+    answer = "Mid";
+    break;
+  case 7:
+  case 8:
+  case 9:
+    answer = "High";
+    break;
+}
+
+
+  // Only change code above this line
+  return answer;
+}
+
+sequentialSizes(1);

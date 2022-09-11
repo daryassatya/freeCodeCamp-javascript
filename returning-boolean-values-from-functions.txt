@@ -1,0 +1,35 @@
+/*
+Mengembalikan Nilai Boolean dari Fungsi
+
+Anda mungkin ingat dari Perbandingan dengan Operator Kesetaraan bahwa semua operator perbandingan mengembalikan boolean trueatau falsenilai.
+
+Terkadang orang menggunakan if/elsepernyataan untuk melakukan perbandingan, seperti ini:
+
+function isEqual(a, b) {
+  if (a === b) {
+    return true;
+  } else {
+    return false;
+  }
+}
+Tapi ada cara yang lebih baik untuk melakukan ini. Sejak ===mengembalikan trueatau false, kami dapat mengembalikan hasil perbandingan:
+
+function isEqual(a, b) {
+  return a === b;
+}
+
+-> Perbaiki fungsi isLessuntuk menghapus if/elsepernyataan.
+
+Tes
+Menunggu :isLess(10, 15)harus kembalitrue
+Menunggu :isLess(15, 10)harus kembalifalse
+Menunggu :Anda tidak boleh menggunakan pernyataan ifatau elsepernyataan apa pun
+*/
+
+function isLess(a, b) {
+  // Only change code below this line
+  return a<b;
+  // Only change code above this line
+}
+
+isLess(10, 15);

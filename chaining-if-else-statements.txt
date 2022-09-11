@@ -1,0 +1,58 @@
+/*
+Pernyataan Chaining If Else
+
+if/elsepernyataan dapat dirantai bersama untuk logika yang kompleks. Berikut adalah pseudocode dari beberapa pernyataan berantai if/ :else if
+
+if (condition1) {
+  statement1
+} else if (condition2) {
+  statement2
+} else if (condition3) {
+  statement3
+. . .
+} else {
+  statementN
+}
+
+-> Tulis pernyataan berantai if/ else ifuntuk memenuhi kondisi berikut:
+
+num < 5- kembali Tiny
+num < 10- kembali Small
+num < 15- kembali Medium
+num < 20- kembali Large
+num >= 20- kembaliHuge
+
+Tes
+Menunggu :Anda harus memiliki setidaknya empat elsepernyataan
+Menunggu :Anda harus memiliki setidaknya empat ifpernyataan
+Menunggu :Anda harus memiliki setidaknya satu returnpernyataan
+Menunggu :testSize(0)harus mengembalikan stringTiny
+Menunggu :testSize(4)harus mengembalikan stringTiny
+Menunggu :testSize(5)harus mengembalikan stringSmall
+Menunggu :testSize(8)harus mengembalikan stringSmall
+Menunggu :testSize(10)harus mengembalikan stringMedium
+Menunggu :testSize(14)harus mengembalikan stringMedium
+Menunggu :testSize(15)harus mengembalikan stringLarge
+Menunggu :testSize(17)harus mengembalikan stringLarge
+Menunggu :testSize(20)harus mengembalikan stringHuge
+Menunggu :testSize(25)harus mengembalikan stringHuge
+*/
+
+function testSize(num) {
+  // Only change code below this line
+  if(num < 5){
+    return "Tiny";
+  } else if(num < 10) {
+    return "Small";
+  } else if(num < 15) {
+    return "Medium"
+  } else if(num < 20 ) {
+    return "Large";
+  } else if(num >= 20) {
+    return "Huge"
+  }
+
+  // Only change code above this line
+}
+
+testSize(7);

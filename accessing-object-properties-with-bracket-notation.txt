@@ -1,0 +1,41 @@
+/*
+Mengakses Properti Objek dengan Notasi Bracket
+Cara kedua untuk mengakses properti suatu objek adalah dengan notasi kurung siku ( []). Jika properti objek yang Anda coba akses memiliki spasi pada namanya, Anda perlu menggunakan notasi kurung.
+
+Namun, Anda masih dapat menggunakan notasi braket pada properti objek tanpa spasi.
+
+Berikut adalah contoh penggunaan notasi braket untuk membaca properti objek:
+
+const myObj = {
+  "Space Name": "Kirk",
+  "More Space": "Spock",
+  "NoSpace": "USS Enterprise"
+};
+
+myObj["Space Name"];
+myObj['More Space'];
+myObj["NoSpace"];
+myObj["Space Name"]akan menjadi string Kirk, myObj['More Space']akan menjadi string Spock, dan myObj["NoSpace"]akan menjadi string USS Enterprise.
+
+Perhatikan bahwa nama properti dengan spasi di dalamnya harus dalam tanda kutip (tunggal atau ganda).
+
+-> Baca nilai properti an entreedan penggunaan the drinknotasi testObjbraket dan tetapkan ke entreeValuedan masing- drinkValuemasing.
+
+Tes
+Menunggu :entreeValueharus berupa string
+Menunggu :Nilai dari entreeValueharus berupa stringhamburger
+Menunggu :drinkValueharus berupa string
+Menunggu :Nilai dari drinkValueharus berupa stringwater
+Menunggu :Anda harus menggunakan notasi braket dua kali
+*/
+
+// Setup
+const testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
+
+// Only change code below this line
+const entreeValue = testObj["an entree"];   // Change this line
+const drinkValue = testObj["the drink"];    // Change this line

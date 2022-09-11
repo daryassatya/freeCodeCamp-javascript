@@ -1,0 +1,54 @@
+/*
+Kode Golf
+
+Dalam permainan Golf, setiap lubang memiliki par, artinya, jumlah rata-rata strokesyang diharapkan dilakukan pegolf untuk menenggelamkan bola ke dalam lubang untuk menyelesaikan permainan. Tergantung pada seberapa jauh di atas atau di bawah parAnda strokes, ada nama panggilan yang berbeda.
+
+Fungsi Anda akan diteruskan pardan strokesargumen. Kembalikan string yang benar menurut tabel ini yang mencantumkan goresan dalam urutan prioritas; atas (tertinggi) ke bawah (terendah):
+
+Stroke	Kembali
+1	"Dalam satu lubang!"
+<= par - 2	"Burung rajawali"
+par - 1	"Burung"
+par	"Par"
+par + 1	"Bogey"
+par + 2	"Double Bogey"
+>= par + 3	"Pulang ke rumah!"
+pardan strokesakan selalu numerik dan positif. Kami telah menambahkan serangkaian semua nama untuk kenyamanan Anda.
+
+Tes
+Menunggu :golfScore(4, 1)harus mengembalikan stringHole-in-one!
+Menunggu :golfScore(4, 2)harus mengembalikan stringEagle
+Menunggu :golfScore(5, 2)harus mengembalikan stringEagle
+Menunggu :golfScore(4, 3)harus mengembalikan stringBirdie
+Menunggu :golfScore(4, 4)harus mengembalikan stringPar
+Menunggu :golfScore(1, 1)harus mengembalikan stringHole-in-one!
+Menunggu :golfScore(5, 5)harus mengembalikan stringPar
+Menunggu :golfScore(4, 5)harus mengembalikan stringBogey
+Menunggu :golfScore(4, 6)harus mengembalikan stringDouble Bogey
+Menunggu :golfScore(4, 7)harus mengembalikan stringGo Home!
+Menunggu :golfScore(5, 9)harus mengembalikan stringGo Home!
+*/
+
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+  // Only change code below this line
+  if(strokes === 1) {
+    return names[0];
+  } else if(strokes <= par - 2) {
+    return names[1];
+  } else if(strokes === par - 1) {
+    return names[2];
+  } else if(strokes === par) {
+    return names[3];
+  } else if(strokes === par + 1) {
+    return names[4];
+  } else if(strokes === par + 2) {
+    return names[5];
+  } else {
+    return names[6];
+  } 
+  // Only change code above this line
+}
+
+golfScore(5, 4);

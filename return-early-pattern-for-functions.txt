@@ -1,0 +1,44 @@
+/*
+Kembalikan Pola Awal untuk Fungsi
+
+Ketika returnpernyataan tercapai, eksekusi fungsi saat ini berhenti dan kontrol kembali ke lokasi pemanggilan.
+
+Contoh
+
+function myFun() {
+  console.log("Hello");
+  return "World";
+  console.log("byebye")
+}
+myFun();
+Di atas akan menampilkan string Hellodi konsol, dan mengembalikan string World. String byebyetidak akan pernah ditampilkan di konsol, karena fungsi keluar pada returnpernyataan.
+
+-> Ubah fungsi abTestsehingga jika aatau blebih kecil dari 0fungsi akan langsung keluar dengan nilai undefined.
+
+Petunjuk
+Ingat itu undefinedadalah kata kunci , bukan string.
+
+Tes
+Menunggu :abTest(2, 2)harus mengembalikan nomor
+Menunggu :abTest(2, 2)harus kembali8
+Menunggu :abTest(-2, 2)harus kembaliundefined
+Menunggu :abTest(2, -2)harus kembaliundefined
+Menunggu :abTest(2, 8)harus kembali18
+Menunggu :abTest(3, 3)harus kembali12
+Menunggu :abTest(0, 0)harus kembali0
+*/
+
+// Setup
+function abTest(a, b) {
+  // Only change code below this line
+
+  if(a < 0 || b < 0){
+    return undefined;
+  }
+
+  // Only change code above this line
+
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+
+abTest(2,2);
