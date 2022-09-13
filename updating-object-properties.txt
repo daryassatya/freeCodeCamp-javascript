@@ -1,0 +1,33 @@
+/*
+Memperbarui Properti Objek
+
+Setelah Anda membuat objek JavaScript, Anda dapat memperbarui propertinya kapan saja seperti Anda memperbarui variabel lainnya. Anda dapat menggunakan notasi titik atau tanda kurung untuk memperbarui.
+
+Sebagai contoh, mari kita lihat ourDog:
+
+const ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+Karena dia anjing yang sangat bahagia, mari kita ubah namanya menjadi string Happy Camper. Inilah cara kami memperbarui properti nama objeknya: ourDog.name = "Happy Camper";atau ourDog["name"] = "Happy Camper";Sekarang ketika kami mengevaluasi ourDog.name, alih-alih mendapatkan Camper, kami akan mendapatkan nama barunya, Happy Camper.
+
+-> Perbarui myDogproperti nama objek. Mari kita ubah namanya dari Codermenjadi Happy Coder. Anda dapat menggunakan notasi titik atau tanda kurung.
+
+Tes
+Menunggu :myDogAnda harus memperbarui nameproperti agar sama dengan string Happy Coder.
+Menunggu :Anda tidak boleh mengedit myDogdefinisi.
+*/
+
+// Setup
+const myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.name = "Happy Coder";
+
+// Only change code below this line

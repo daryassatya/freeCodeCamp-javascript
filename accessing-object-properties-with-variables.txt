@@ -1,0 +1,41 @@
+/*
+Mengakses Properti Objek dengan Variabel
+
+Penggunaan lain dari notasi braket pada objek adalah untuk mengakses properti yang disimpan sebagai nilai variabel. Ini bisa sangat berguna untuk iterasi melalui properti objek atau saat mengakses tabel pencarian.
+
+Berikut adalah contoh penggunaan variabel untuk mengakses properti:
+
+const dogs = {
+  Fido: "Mutt",
+  Hunter: "Doberman",
+  Snoopie: "Beagle"
+};
+
+const myDog = "Hunter";
+const myBreed = dogs[myDog];
+console.log(myBreed);
+String Dobermanakan ditampilkan di konsol.
+
+Perhatikan bahwa kami tidak menggunakan tanda kutip di sekitar nama variabel saat menggunakannya untuk mengakses properti karena kami menggunakan nilai variabel, bukan nama .
+
+-> Setel playerNumbervariabel ke 16. Kemudian, gunakan variabel untuk mencari nama pemain dan menetapkannya ke player.
+
+Tes
+Menunggu :playerNumberharus berupa angka
+Menunggu :Variabel playerharus berupa string
+Menunggu :Nilai dari playerharus berupa stringMontana
+Menunggu :Anda harus menggunakan notasi braket untuk mengaksestestObj
+Menunggu :Anda tidak boleh menetapkan nilai Montanake variabel playersecara langsung.
+Menunggu :Anda harus menggunakan variabel playerNumberdalam notasi braket Anda
+*/
+
+// Setup
+const testObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+
+// Only change code below this line
+const playerNumber = 16;  // Change this line
+const player = testObj[playerNumber];   // Change this line

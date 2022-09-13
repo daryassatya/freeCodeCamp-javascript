@@ -1,0 +1,45 @@
+/*
+Hapus Properti dari Objek JavaScript
+
+Kami juga dapat menghapus properti dari objek seperti ini:
+
+delete ourDog.bark;
+Contoh:
+
+const ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"],
+  "bark": "bow-wow"
+};
+
+delete ourDog.bark;
+Setelah baris terakhir yang ditunjukkan di atas, ourDogterlihat seperti:
+
+{
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+}
+
+-> Hapus tails properti dari myDog. Anda dapat menggunakan notasi titik atau tanda kurung.
+
+Tes
+Menunggu :Anda harus menghapus properti tailsdari myDog.
+Menunggu :Anda tidak boleh mengubah myDogpengaturan.
+*/
+
+// Setup
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+delete myDog.tails;
+console.log(myDog);
+
+// Only change code below this line

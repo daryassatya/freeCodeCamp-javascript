@@ -1,0 +1,34 @@
+/*
+Bersarang Untuk Loop
+Jika Anda memiliki array multidimensi, Anda dapat menggunakan logika yang sama seperti titik jalan sebelumnya untuk mengulang melalui array dan sub-array apa pun. Berikut ini contohnya:
+
+const arr = [
+  [1, 2], [3, 4], [5, 6]
+];
+
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr[i].length; j++) {
+    console.log(arr[i][j]);
+  }
+}
+Ini menampilkan setiap sub-elemen dalam arrsatu waktu. Perhatikan bahwa untuk loop dalam, kita memeriksa .lengthdari arr[i], karena arr[i]itu sendiri adalah sebuah array.
+
+-> Ubah fungsi multiplyAllsehingga mengembalikan produk dari semua angka dalam sub-array arr.
+
+Tes
+Menunggu :multiplyAll([[1], [2], [3]])harus kembali6
+Menunggu :multiplyAll([[1, 2], [3, 4], [5, 6, 7]])harus kembali5040
+Menunggu :multiplyAll([[5, 1], [0.2, 4, 0.5], [3, 9]])harus kembali54
+*/
+
+function multiplyAll(arr) {
+  let product = 1;
+  // Only change code below this line
+  for(let i=0; i<arr.length; i++){
+    for(let j=0; j<arr[i].length; j++){
+      product *= arr[i][j];
+    }
+  }
+  // Only change code above this line
+  return product;
+}

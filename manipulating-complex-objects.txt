@@ -1,0 +1,67 @@
+/*
+Memanipulasi Objek Kompleks
+
+Terkadang Anda mungkin ingin menyimpan data dalam Struktur Data yang fleksibel . Objek JavaScript adalah salah satu cara untuk menangani data yang fleksibel. Mereka memungkinkan kombinasi sewenang-wenang string , angka , boolean , array , fungsi , dan objek .
+
+Berikut ini contoh struktur data yang kompleks:
+
+const ourMusic = [
+  {
+    "artist": "Daft Punk",
+    "title": "Homework",
+    "release_year": 1997,
+    "formats": [ 
+      "CD", 
+      "Cassette", 
+      "LP"
+    ],
+    "gold": true
+  }
+];
+Ini adalah array yang berisi satu objek di dalamnya. Objek memiliki berbagai potongan metadata tentang album. formatsIni juga memiliki array bersarang . Jika Anda ingin menambahkan lebih banyak rekaman album, Anda dapat melakukannya dengan menambahkan rekaman ke larik tingkat atas. Objek menyimpan data dalam properti, yang memiliki format nilai kunci. Dalam contoh di atas, "artist": "Daft Punk"adalah properti yang memiliki kunci artistdan nilai Daft Punk.
+
+Catatan: Anda perlu menempatkan koma setelah setiap objek dalam array, kecuali jika itu adalah objek terakhir dalam array.
+
+-> Tambahkan album baru ke myMusicarray. Tambahkan artistdan titlestring, release_yearnomor, dan formatsarray string.
+
+Tes
+Menunggu :myMusicharus berupa array
+Menunggu :myMusicharus memiliki setidaknya dua elemen
+Menunggu :Elemen dalam myMusicarray harus berupa objek
+Menunggu :Objek Anda myMusicharus memiliki setidaknya 4 properti
+Menunggu :Objek Anda myMusicharus berisi properti artistyang berupa string
+Menunggu :Objek Anda myMusicharus berisi properti titleyang berupa string
+Menunggu :Objek Anda myMusicharus berisi properti release_yearyang berupa angka
+Menunggu :Objek Anda myMusicharus berisi formatsproperti yang merupakan array
+Menunggu :formatsharus berupa array string dengan setidaknya dua elemen
+*/
+
+const myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  }
+];
+
+const newObj = {
+  artist:"Dimas",
+  title: "Aku Hebat",
+  release_year: 231102,
+  formats: ["produse studio marvel", "Netflix"]
+}
+myMusic.push(newObj);
+
+// Jangan ikuti dibawah ini, lebih baik buat variable terlebih dauhulu untuk membungkus object barunya
+// myMusic.push({
+//   artis:"Dimas",
+//   title: "Aku Hebat",
+//   release_year: 231102,
+//   formats: ["produse studio marvel"]
+// });

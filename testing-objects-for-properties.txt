@@ -1,0 +1,36 @@
+/*
+Menguji Objek untuk Properti
+
+Terkadang berguna untuk memeriksa apakah properti dari objek tertentu ada atau tidak. Kita dapat menggunakan .hasOwnProperty(propname)metode objek untuk menentukan apakah objek tersebut memiliki nama properti yang diberikan. .hasOwnProperty()kembali trueatau falsejika properti ditemukan atau tidak.
+
+Contoh
+
+const myObj = {
+  top: "hat",
+  bottom: "pants"
+};
+
+myObj.hasOwnProperty("top");
+myObj.hasOwnProperty("middle");
+Yang pertama hasOwnPropertykembali true, sedangkan yang kedua kembali false.
+
+-> Ubah fungsi checkObjuntuk menguji apakah objek yang diteruskan ke fungsi ( obj) berisi properti tertentu ( checkProp). Jika properti ditemukan, kembalikan nilai properti itu. Jika tidak, kembalikan "Not Found".
+
+Tes
+Menunggu :checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift")harus mengembalikan string pony.
+Menunggu :checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "pet")harus mengembalikan string kitten.
+Menunggu :checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "house")harus mengembalikan string Not Found.
+Menunggu :checkObj({city: "Seattle"}, "city")harus mengembalikan string Seattle.
+Menunggu :checkObj({city: "Seattle"}, "district")harus mengembalikan string Not Found.
+Menunggu :checkObj({pet: "kitten", bed: "sleigh"}, "gift")harus mengembalikan string Not Found.
+*/
+
+function checkObj(obj, checkProp) {
+  // Only change code below this line
+
+  if(obj.hasOwnProperty(checkProp)){
+    return obj[checkProp];
+  }
+  return "Not Found";
+  // Only change code above this line
+}

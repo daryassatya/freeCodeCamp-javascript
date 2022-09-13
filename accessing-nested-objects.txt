@@ -1,0 +1,44 @@
+/*
+Mengakses Objek Bersarang
+
+Sub-properti objek dapat diakses dengan menyatukan notasi titik atau braket.
+
+Berikut adalah objek bersarang:
+
+const ourStorage = {
+  "desk": {
+    "drawer": "stapler"
+  },
+  "cabinet": {
+    "top drawer": { 
+      "folder1": "a file",
+      "folder2": "secrets"
+    },
+    "bottom drawer": "soda"
+  }
+};
+
+ourStorage.cabinet["top drawer"].folder2;
+ourStorage.desk.drawer;
+ourStorage.cabinet["top drawer"].folder2akan menjadi string secrets, dan ourStorage.desk.drawerakan menjadi string stapler.
+
+-> Akses myStorageobjek dan tetapkan konten glove boxproperti ke gloveBoxContentsvariabel. Gunakan notasi titik untuk semua properti jika memungkinkan, jika tidak gunakan notasi braket.
+
+Tes
+Menunggu :gloveBoxContentsharus sama dengan string maps.
+Menunggu :Kode Anda harus menggunakan notasi titik dan tanda kurung untuk mengakses myStorage.
+*/
+
+const myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+const gloveBoxContents = myStorage.car.inside["glove box"];

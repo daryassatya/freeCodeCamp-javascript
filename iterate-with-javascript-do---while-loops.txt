@@ -1,0 +1,48 @@
+/*
+Iterasi dengan JavaScript Do...While Loops
+Jenis loop berikutnya yang akan Anda pelajari disebut do...whileloop. Ini disebut do...whileloop karena pertama-tama akan domelewati satu kode di dalam loop apa pun yang terjadi, dan kemudian terus menjalankan loop whilekondisi yang ditentukan dievaluasi menjadi true.
+
+const ourArray = [];
+let i = 0;
+
+do {
+  ourArray.push(i);
+  i++;
+} while (i < 5);
+Contoh di atas berperilaku mirip dengan jenis loop lainnya, dan array yang dihasilkan akan terlihat seperti [0, 1, 2, 3, 4]. Namun, yang do...whilemembedakan dari loop lainnya adalah bagaimana ia berperilaku ketika kondisi gagal pada pemeriksaan pertama. Mari kita lihat ini dalam tindakan. Berikut adalah loop reguler whileyang akan menjalankan kode dalam loop selama i < 5:
+
+const ourArray = []; 
+let i = 5;
+
+while (i < 5) {
+  ourArray.push(i);
+  i++;
+}
+Dalam contoh ini, kita menginisialisasi nilai ourArrayke array kosong dan nilai ike 5. Saat kita mengeksekusi whileloop, kondisi dievaluasi ke falsekarena itidak kurang dari 5, jadi kita tidak mengeksekusi kode di dalam loop. Hasilnya ourArrayakan berakhir tanpa nilai yang ditambahkan ke dalamnya, dan akan tetap terlihat seperti []ketika semua kode dalam contoh di atas telah selesai dijalankan. Sekarang, lihat satu do...whilelingkaran:
+
+const ourArray = []; 
+let i = 5;
+
+do {
+  ourArray.push(i);
+  i++;
+} while (i < 5);
+Dalam hal ini, kami menginisialisasi nilai ihingga 5, seperti yang kami lakukan dengan whileloop. Ketika kita sampai ke baris berikutnya, tidak ada kondisi untuk dievaluasi, jadi kita pergi ke kode di dalam kurung kurawal dan menjalankannya. Kami akan menambahkan satu elemen ke array dan kemudian inaik sebelum kami sampai ke pemeriksaan kondisi. Ketika kami akhirnya mengevaluasi kondisi i < 5pada baris terakhir, kami melihat bahwa isekarang 6, yang gagal dalam pemeriksaan kondisional, jadi kami keluar dari loop dan selesai. Pada akhir contoh di atas, nilai ourArrayadalah [5]. Pada dasarnya, sebuah do...whileloop memastikan bahwa kode di dalam loop akan berjalan setidaknya sekali. Mari kita coba membuat do...whileloop bekerja dengan mendorong nilai ke array.
+
+-> Ubah whileloop dalam kode menjadi do...whileloop sehingga loop hanya akan mendorong angka 10ke myArray, dan iakan sama dengan 11saat kode Anda selesai dijalankan.
+
+Tes
+Menunggu :Anda harus menggunakan do...whileloop untuk latihan ini.
+Menunggu :myArrayharus sama [10].
+Menunggu :iharus sama11
+*/
+
+// Setup
+const myArray = [];
+let i = 10;
+
+// Only change code below this line
+do{
+  myArray.push(i);
+  i++;
+} while (i < 5);

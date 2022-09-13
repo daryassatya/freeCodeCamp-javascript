@@ -1,0 +1,35 @@
+/*
+  Iterasi dengan JavaScript While Loops
+
+Anda dapat menjalankan kode yang sama beberapa kali dengan menggunakan loop.
+
+Jenis perulangan pertama yang akan kita pelajari disebut whileperulangan karena ia berjalan saat kondisi tertentu benar dan berhenti setelah kondisi itu tidak lagi benar.
+
+const ourArray = [];
+let i = 0;
+
+while (i < 5) {
+  ourArray.push(i);
+  i++;
+}
+Dalam contoh kode di atas, whileloop akan dieksekusi 5 kali dan menambahkan angka 0 hingga 4 ke ourArray.
+
+Mari kita coba membuat while loop bekerja dengan mendorong nilai ke array.
+
+-> Tambahkan angka 5 sampai 0 (inklusif) dalam urutan menurun untuk myArraymenggunakan whileloop.
+
+Tes
+Menunggu :Anda harus menggunakan whileloop untuk ini.
+Menunggu :myArrayharus sama [5, 4, 3, 2, 1, 0].
+*/
+
+// Setup
+const myArray = [];
+let i = 5;
+
+while(i>=0){
+  myArray.push(i);
+  i--;
+}
+
+// Only change code below this line

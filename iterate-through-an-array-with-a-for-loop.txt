@@ -1,0 +1,27 @@
+/*
+Iterasi Melalui Array dengan For Loop
+Tugas umum dalam JavaScript adalah mengulangi isi array. Salah satu cara untuk melakukannya adalah dengan forloop. Kode ini akan menampilkan setiap elemen array arrke konsol:
+
+const arr = [10, 9, 8, 7, 6];
+
+for (let i = 0; i < arr.length; i++) {
+   console.log(arr[i]);
+}
+Ingat bahwa array memiliki pengindeksan berbasis nol, yang berarti indeks terakhir dari array adalah length - 1. Kondisi kami untuk loop ini adalah i < arr.length, yang menghentikan loop ketika isama dengan length. Dalam hal ini iterasi terakhir adalah i === 4ketika imenjadi sama dengan arr.length - 1dan output 6ke konsol. Kemudian imeningkat menjadi 5, dan loop berakhir karena i < arr.lengthadalah false.
+
+-> Deklarasikan dan inisialisasi variabel totalke 0. Gunakan forloop untuk menambahkan nilai setiap elemen myArrarray ke total.
+
+Tes
+Menunggu :totalharus dideklarasikan dan diinisialisasi ke 0.
+Menunggu :totalharus sama dengan 20.
+Menunggu :Anda harus menggunakan forloop untuk beralih melalui myArr.
+Menunggu :Anda tidak boleh mencoba untuk langsung menetapkan nilai 20 ke total.
+*/
+
+// Setup
+const myArr = [2, 3, 4, 5, 6];
+let total = 0
+for(let i=0; i<myArr.length; i++){
+  total += myArr[i];
+}
+// Only change code below this line

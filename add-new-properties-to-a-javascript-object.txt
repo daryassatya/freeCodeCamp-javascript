@@ -1,0 +1,38 @@
+/*
+Tambahkan Properti Baru ke Objek JavaScript
+Anda dapat menambahkan properti baru ke objek JavaScript yang ada dengan cara yang sama seperti Anda memodifikasinya.
+
+Inilah cara kami menambahkan barkproperti ke ourDog:
+
+ourDog.bark = "bow-wow";
+atau
+
+ourDog["bark"] = "bow-wow";
+Sekarang ketika kita mengevaluasi ourDog.bark, kita akan mendapatkan gonggongannya, bow-wow.
+
+Contoh:
+
+const ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+
+ourDog.bark = "bow-wow";
+
+-> Tambahkan barkproperti ke myDogdan atur ke suara anjing, seperti "guk". Anda dapat menggunakan notasi titik atau tanda kurung.
+
+Tes
+Menunggu :Anda harus menambahkan properti barkke myDog.
+Menunggu :Anda tidak boleh menambahkan barkinisialisasi myDog.
+*/
+
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.bark = "Guk-Guk";

@@ -1,0 +1,58 @@
+/*
+Menggunakan Objek untuk Pencarian
+Objek dapat dianggap sebagai penyimpanan kunci/nilai, seperti kamus. Jika Anda memiliki data tabular, Anda bisa menggunakan objek untuk mencari nilai daripada switchpernyataan atau if/elserantai. Ini paling berguna ketika Anda tahu bahwa data input Anda terbatas pada rentang tertentu.
+
+Berikut adalah contoh pencarian alfabet terbalik sederhana:
+
+const alpha = {
+  1:"Z",
+  2:"Y",
+  3:"X",
+  4:"W",
+  ...
+  24:"C",
+  25:"B",
+  26:"A"
+};
+
+const thirdLetter = alpha[2];
+const lastLetter = alpha[24];
+
+const value = 2;
+const valueLookup = alpha[value];
+thirdLetteradalah string Y, lastLetteradalah string C, dan valueLookupstring Y.
+
+-> Ubah pernyataan switch menjadi objek yang disebut lookup. Gunakan untuk mencari valdan menetapkan string terkait ke resultvariabel.
+
+Tes
+Menunggu :phoneticLookup("alpha")harus sama dengan stringAdams
+Menunggu :phoneticLookup("bravo")harus sama dengan stringBoston
+Menunggu :phoneticLookup("charlie")harus sama dengan stringChicago
+Menunggu :phoneticLookup("delta")harus sama dengan stringDenver
+Menunggu :phoneticLookup("echo")harus sama dengan stringEasy
+Menunggu :phoneticLookup("foxtrot")harus sama dengan stringFrank
+Menunggu :phoneticLookup("")harus samaundefined
+Menunggu :Anda tidak boleh mengubah returnpernyataan
+Menunggu :Anda tidak boleh menggunakan case, switch, atau ifpernyataan
+*/
+
+// Setup
+function phoneticLookup(val) {
+  let result = "";
+
+  // Only change code below this line
+  const lookup = {
+    alpha : "Adams",
+    bravo : "Boston",
+    charlie : "Chicago",
+    delta : "Denver",
+    echo : "Easy",
+    foxtrot : "Frank"
+  }
+
+  result = lookup[val];
+  // Only change code above this line
+  return result;
+}
+
+phoneticLookup("charlie");

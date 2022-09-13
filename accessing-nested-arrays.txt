@@ -1,0 +1,56 @@
+/*
+Mengakses Array Bersarang
+Seperti yang telah kita lihat pada contoh sebelumnya, objek dapat berisi objek bersarang dan array bersarang. Mirip dengan mengakses objek bersarang, notasi braket array dapat dirantai untuk mengakses array bersarang.
+
+Berikut adalah contoh cara mengakses array bersarang:
+
+const ourPets = [
+  {
+    animalType: "cat",
+    names: [
+      "Meowzer",
+      "Fluffy",
+      "Kit-Cat"
+    ]
+  },
+  {
+    animalType: "dog",
+    names: [
+      "Spot",
+      "Bowser",
+      "Frankie"
+    ]
+  }
+];
+
+ourPets[0].names[1];
+ourPets[1].names[0];
+ourPets[0].names[1]akan menjadi string Fluffy, dan ourPets[1].names[0]akan menjadi string Spot.
+
+-> Menggunakan notasi titik dan tanda kurung, atur variabel secondTreeke item kedua dalam treesdaftar dari myPlantsobjek.
+
+Tes
+Menunggu :secondTreeharus sama dengan string pine.
+Menunggu :Kode Anda harus menggunakan notasi titik dan tanda kurung untuk mengakses myPlants.
+*/
+
+const myPlants = [
+  {
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }
+];
+
+const secondTree = myPlants[1].list[1];

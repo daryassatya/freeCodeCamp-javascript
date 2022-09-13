@@ -1,0 +1,41 @@
+/*
+Iterasi dengan JavaScript Untuk Loop
+
+Anda dapat menjalankan kode yang sama beberapa kali dengan menggunakan loop.
+
+Jenis loop JavaScript yang paling umum disebut forloop karena berjalan untuk beberapa kali tertentu.
+
+Untuk loop dideklarasikan dengan tiga ekspresi opsional yang dipisahkan oleh titik koma:
+
+for (a; b; c), di mana aadalah pernyataan inisialisasi, badalah pernyataan kondisi, dan cmerupakan ekspresi akhir.
+
+Pernyataan inisialisasi dijalankan hanya satu kali sebelum loop dimulai. Ini biasanya digunakan untuk mendefinisikan dan mengatur variabel loop Anda.
+
+Pernyataan kondisi dievaluasi pada awal setiap iterasi loop dan akan terus berlanjut selama dievaluasi ke true. Ketika kondisi falsedi awal iterasi, loop akan berhenti mengeksekusi. Ini berarti jika kondisi dimulai dengan false, loop Anda tidak akan pernah dieksekusi.
+
+Ekspresi terakhir dieksekusi pada akhir setiap iterasi loop, sebelum pemeriksaan kondisi berikutnya dan biasanya digunakan untuk menambah atau mengurangi penghitung loop Anda.
+
+Dalam contoh berikut, kami menginisialisasi dengan i = 0dan mengulanginya saat kondisi kami i < 5benar. Kami akan menambah setiap iterasi loop dengan isebagai ekspresi terakhir kami.1i++
+
+const ourArray = [];
+
+for (let i = 0; i < 5; i++) {
+  ourArray.push(i);
+}
+ourArraysekarang akan memiliki nilai [0, 1, 2, 3, 4].
+
+-> Gunakan forloop untuk mendorong nilai 1 hingga 5 ke myArray.
+
+Tes
+Menunggu :Anda harus menggunakan forloop untuk ini.
+Menunggu :myArrayharus sama [1, 2, 3, 4, 5].
+*/
+
+
+// Setup
+const myArray = [];
+for(let i = 1; i<=5; i++){
+  myArray.push(i);
+}
+
+// Only change code below this line
