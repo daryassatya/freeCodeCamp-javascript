@@ -1,0 +1,40 @@
+/*
+Gunakan Rekursi untuk Membuat Rentang Angka
+Melanjutkan tantangan sebelumnya, kami memberi Anda kesempatan lain untuk membuat fungsi rekursif untuk menyelesaikan masalah.
+
+-> Kami telah mendefinisikan fungsi bernama rangeOfNumbersdengan dua parameter. Fungsi harus mengembalikan array bilangan bulat yang dimulai dengan angka yang diwakili oleh startNumparameter dan diakhiri dengan angka yang diwakili oleh endNumparameter. Angka awal akan selalu kurang dari atau sama dengan angka akhir. Fungsi Anda harus menggunakan rekursi dengan memanggil dirinya sendiri dan tidak menggunakan loop apa pun. Ini juga harus bekerja untuk kasus di mana keduanya startNumdan endNumsama.
+
+Tes
+Menunggu :Fungsi Anda harus mengembalikan array.
+Menunggu :Kode Anda tidak boleh menggunakan sintaks loop apa pun ( foratau whileatau fungsi urutan yang lebih tinggi seperti forEach, map, filter, atau reduce).
+Menunggu :rangeOfNumbersharus menggunakan rekursi (memanggil dirinya sendiri) untuk menyelesaikan tantangan ini.
+Menunggu :rangeOfNumbers(1, 5)harus kembali [1, 2, 3, 4, 5].
+Menunggu :rangeOfNumbers(6, 9)harus kembali [6, 7, 8, 9].
+Menunggu :rangeOfNumbers(4, 4)harus kembali [4].
+*/
+
+function rangeOfNumbers(startNum, endNum) {
+  // Cara 1
+  // if(endNum < startNum){
+  //   return [];
+  // }
+  // const result = rangeOfNumbers(startNum, endNum-1);
+  // result.push(endNum);
+  // return result;
+
+  // Cara 2 
+  // return startNum > endNum ? [] : [startNum].concat(rangeOfNumbers(startNum+1, endNum));
+
+  // Cara 3
+  // return endNum < startNum
+  //   ? []
+  //   : rangeOfNumbers(startNum, endNum - 1).concat(endNum);
+
+  // Cara 4
+  return endNum < startNum
+    ? []
+    : [...rangeOfNumbers(startNum, endNum - 1), endNum];
+
+};
+
+console.log(rangeOfNumbers(1, 5));

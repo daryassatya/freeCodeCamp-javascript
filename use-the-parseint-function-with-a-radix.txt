@@ -1,0 +1,28 @@
+/*
+Gunakan Fungsi parseInt dengan Radix
+
+Fungsi parseInt()mem-parsing string dan mengembalikan integer. Dibutuhkan argumen kedua untuk radix, yang menentukan basis nomor dalam string. Radix dapat berupa bilangan bulat antara 2 dan 36.
+
+Panggilan fungsi terlihat seperti:
+
+parseInt(string, radix);
+Dan inilah contohnya:
+
+const a = parseInt("11", 2);
+Variabel radix mengatakan bahwa 11ada dalam sistem biner, atau basis 2. Contoh ini mengubah string 11menjadi integer 3.
+
+-> Gunakan parseInt()dalam convertToIntegerfungsi sehingga ia mengubah bilangan biner menjadi bilangan bulat dan mengembalikannya.
+
+Tes
+Menunggu :convertToIntegerharus menggunakan parseInt()fungsi
+Menunggu :convertToInteger("10011")harus mengembalikan nomor
+Menunggu :convertToInteger("10011")harus kembali 19
+Menunggu :convertToInteger("111001")harus kembali 57
+Menunggu :convertToInteger("JamesBond")harus kembaliNaN
+*/
+
+function convertToInteger(str) {
+  return parseInt(str,2);
+}
+
+convertToInteger("10011");

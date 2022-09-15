@@ -1,0 +1,25 @@
+/*
+Hasilkan Pecahan Acak dengan JavaScript
+
+Angka acak berguna untuk membuat perilaku acak.
+
+JavaScript memiliki Math.random()fungsi yang menghasilkan angka desimal acak antara 0(inklusif) dan 1(eksklusif). Dengan demikian Math.random()dapat mengembalikan a 0tetapi tidak pernah mengembalikan a 1.
+
+Catatan: Seperti Menyimpan Nilai dengan Operator Penugasan , semua pemanggilan fungsi akan diselesaikan sebelum returndijalankan, sehingga kita dapat returnmengetahui nilai Math.random()fungsi tersebut.
+
+Ubah randomFractionuntuk mengembalikan nomor acak alih-alih mengembalikan 0.
+
+Tes
+Menunggu :randomFractionharus mengembalikan nomor acak.
+Menunggu :Angka yang dikembalikan oleh randomFractionharus berupa desimal.
+Menunggu :Anda harus menggunakan Math.randomuntuk menghasilkan angka desimal acak.
+*/
+
+function randomFraction() {
+
+  // Only change code below this line
+
+  return Math.random();
+
+  // Only change code above this line
+}

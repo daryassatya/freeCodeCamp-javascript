@@ -1,0 +1,46 @@
+/*
+Ganti Loop menggunakan Rekursi
+
+Rekursi adalah konsep bahwa suatu fungsi dapat dinyatakan dalam dirinya sendiri. Untuk membantu memahami hal ini, mulailah dengan memikirkan tugas berikut: kalikan nelemen pertama dari array untuk membuat produk dari elemen tersebut. Menggunakan forloop, Anda bisa melakukan ini:
+
+  function multiply(arr, n) {
+    let product = 1;
+    for (let i = 0; i < n; i++) {
+      product *= arr[i];
+    }
+    return product;
+  }
+Namun, perhatikan bahwa multiply(arr, n) == multiply(arr, n - 1) * arr[n - 1]. Itu berarti Anda dapat menulis ulang multiplydengan sendirinya dan tidak perlu menggunakan loop.
+
+  function multiply(arr, n) {
+    if (n <= 0) {
+      return 1;
+    } else {
+      return multiply(arr, n - 1) * arr[n - 1];
+    }
+  }
+Versi rekursif multiplyrusak seperti ini. Dalam kasus dasar , di mana n <= 0, ia mengembalikan 1. Untuk nilai yang lebih besar dari n, ia memanggil dirinya sendiri, tetapi dengan n - 1. Panggilan fungsi itu dievaluasi dengan cara yang sama, memanggil multiplylagi hingga n <= 0. Pada titik ini, semua fungsi dapat kembali dan yang asli multiplymengembalikan jawabannya.
+
+Catatan: Fungsi rekursif harus memiliki kasus dasar ketika mereka kembali tanpa memanggil fungsi lagi (dalam contoh ini, ketika n <= 0), jika tidak, mereka tidak akan pernah bisa menyelesaikan eksekusi.
+
+-> Tulis fungsi rekursif, sum(arr, n), yang mengembalikan jumlah nelemen pertama dari array arr.
+
+Tes
+Menunggu :sum([1], 0)harus sama dengan 0.
+Menunggu :sum([2, 3, 4], 1)harus sama 2.
+Menunggu :sum([2, 3, 4, 5], 3)harus sama dengan 9.
+Menunggu :Kode Anda tidak boleh bergantung pada jenis loop apa pun ( foratau whileatau fungsi urutan yang lebih tinggi seperti forEach, map, filter, atau reduce.).
+Menunggu :Anda harus menggunakan rekursi untuk menyelesaikan masalah ini.
+*/
+
+function sum(arr, n) {
+  // Only change code below this line
+  if(n <= 0) {
+    return 0;
+  } else {
+    return sum(arr, n - 1) + arr[n - 1];
+  }
+  // Only change code above this line
+}
+
+console.log(sum([2, 3, 4], 2));

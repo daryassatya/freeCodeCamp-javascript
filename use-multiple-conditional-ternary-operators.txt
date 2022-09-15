@@ -1,0 +1,45 @@
+/*
+Gunakan Beberapa Operator Bersyarat (Ternary)
+
+Pada tantangan sebelumnya, Anda menggunakan operator kondisional tunggal. Anda juga dapat menghubungkannya bersama-sama untuk memeriksa beberapa kondisi.
+
+Fungsi berikut menggunakan if, else if, dan elsepernyataan untuk memeriksa beberapa kondisi:
+
+function findGreaterOrEqual(a, b) {
+  if (a === b) {
+    return "a and b are equal";
+  }
+  else if (a > b) {
+    return "a is greater";
+  }
+  else {
+    return "b is greater";
+  }
+}
+Fungsi di atas dapat ditulis ulang menggunakan beberapa operator kondisional:
+
+function findGreaterOrEqual(a, b) {
+  return (a === b) ? "a and b are equal" 
+    : (a > b) ? "a is greater" 
+    : "b is greater";
+}
+Ini dianggap praktik terbaik untuk memformat beberapa operator kondisional sedemikian rupa sehingga setiap kondisi berada pada baris terpisah, seperti yang ditunjukkan di atas. Menggunakan beberapa operator kondisional tanpa lekukan yang tepat dapat membuat kode Anda sulit dibaca. Sebagai contoh:
+
+function findGreaterOrEqual(a, b) {
+  return (a === b) ? "a and b are equal" : (a > b) ? "a is greater" : "b is greater";
+}
+
+-> Dalam checkSignfungsi tersebut, gunakan beberapa operator kondisional - mengikuti format yang disarankan yang digunakan di findGreaterOrEqual- untuk memeriksa apakah suatu angka positif, negatif, atau nol. Fungsi harus kembali positive, negativeatau zero.
+
+Tes
+Menunggu :checkSignharus menggunakan beberapa operator kondisional
+Menunggu :checkSign(10)harus mengembalikan string positive. Perhatikan bahwa huruf besar penting
+Menunggu :checkSign(-12)harus mengembalikan string negative. Perhatikan bahwa huruf besar penting
+Menunggu :checkSign(0)harus mengembalikan string zero. Perhatikan bahwa huruf besar penting
+*/
+
+function checkSign(num) {
+  return num === 0 ? "zero" : num > 0 ? "positive" : "negative";
+}
+
+checkSign(10);

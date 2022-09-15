@@ -1,0 +1,24 @@
+/*
+Hasilkan Bilangan Bulat Acak dalam Rentang
+Alih-alih menghasilkan bilangan bulat acak antara nol dan bilangan tertentu seperti yang kita lakukan sebelumnya, kita dapat menghasilkan bilangan bulat acak yang berada dalam kisaran dua bilangan tertentu.
+
+Untuk melakukan ini, kami akan menentukan jumlah minimum mindan jumlah maksimum max.
+
+Berikut rumus yang akan kita gunakan. Luangkan waktu sejenak untuk membacanya dan coba pahami apa yang dilakukan kode ini:
+
+Math.floor(Math.random() * (max - min + 1)) + min
+
+-> Buat fungsi yang disebut randomRangeyang mengambil rentang myMindan myMaxdan mengembalikan bilangan bulat acak yang lebih besar dari atau sama dengan myMin, dan kurang dari atau sama dengan myMax, inklusif.
+
+Tes
+Menunggu :Angka acak terendah yang dapat dihasilkan randomRangeharus sama dengan angka minimum Anda, myMin.
+Menunggu :Angka acak tertinggi yang dapat dihasilkan oleh randomRangeharus sama dengan jumlah maksimum Anda, myMax.
+Menunggu :Angka acak yang dihasilkan oleh randomRangeharus berupa bilangan bulat, bukan desimal.
+Menunggu :randomRangeharus menggunakan keduanya myMaxdan myMin, dan mengembalikan nomor acak dalam jangkauan Anda.
+*/
+
+function randomRange(myMin, myMax) {
+  // Only change code below this line
+  return Math.floor(Math.random() * (myMax-myMin+1))+myMin;
+  // Only change code above this line
+}

@@ -1,0 +1,49 @@
+/*
+Gunakan Rekursi untuk Membuat Hitung Mundur
+Dalam tantangan sebelumnya , Anda telah mempelajari cara menggunakan rekursi untuk mengganti forloop. Sekarang, mari kita lihat fungsi yang lebih kompleks yang mengembalikan larik bilangan bulat berurutan yang dimulai dengan 1nomor yang diteruskan ke fungsi tersebut.
+
+Seperti yang disebutkan dalam tantangan sebelumnya, akan ada kasus dasar . Kasus dasar memberi tahu fungsi rekursif ketika tidak perlu lagi memanggil dirinya sendiri. Ini adalah kasus sederhana di mana nilai kembalian sudah diketahui. Juga akan ada panggilan rekursif yang mengeksekusi fungsi asli dengan argumen yang berbeda. Jika fungsi ditulis dengan benar, akhirnya kasus dasar akan tercapai.
+
+Misalnya, Anda ingin menulis fungsi rekursif yang mengembalikan array yang berisi angka 1melalui n. Fungsi ini perlu menerima argumen, n, yang mewakili angka terakhir. Maka ia perlu memanggil dirinya sendiri dengan nilai-nilai yang semakin kecil nhingga mencapai 1. Anda dapat menulis fungsinya sebagai berikut:
+
+function countup(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const countArray = countup(n - 1);
+    countArray.push(n);
+    return countArray;
+  }
+}
+console.log(countup(5));
+Nilai [1, 2, 3, 4, 5]akan ditampilkan di konsol.
+
+Pada awalnya, ini tampak berlawanan dengan intuisi karena nilainya n menurun , tetapi nilai dalam larik terakhir meningkat . Ini terjadi karena push terjadi terakhir kali, setelah panggilan rekursif kembali. Pada titik di mana ndidorong ke dalam array, countup(n - 1)telah dievaluasi dan dikembalikan [1, 2, ..., n - 1].
+
+-> Kami telah mendefinisikan fungsi yang dipanggil countdowndengan satu parameter ( n). Fungsi harus menggunakan rekursi untuk mengembalikan array yang berisi bilangan bulat nberdasarkan 1parameter n. Jika fungsi dipanggil dengan angka kurang dari 1, fungsi tersebut harus mengembalikan array kosong. Misalnya, memanggil fungsi ini dengan n = 5harus mengembalikan array [5, 4, 3, 2, 1]. Fungsi Anda harus menggunakan rekursi dengan memanggil dirinya sendiri dan tidak boleh menggunakan loop apa pun.
+
+Tes
+Menunggu :countdown(-1)harus mengembalikan array kosong.
+Menunggu :countdown(10)harus kembali[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+Menunggu :countdown(5)harus kembali[5, 4, 3, 2, 1]
+Menunggu :Kode Anda tidak boleh bergantung pada jenis perulangan ( for, whileatau fungsi yang lebih tinggi seperti forEach, map, filter, dan reduce).
+Menunggu :Anda harus menggunakan rekursi untuk menyelesaikan masalah ini.
+*/
+
+// Only change code below this line
+function countdown(n){
+  // if (n < 1) {
+  //   return [];
+  // } else {
+  //   const countArray = countup(n - 1);
+  //   countArray.unshift(n);
+  //   return countArray;
+  // }
+
+  // Metode method ternary dan concat
+  // return n < 1 ? [] : [n].concat(countdown(n-1));
+
+  // Metode ternary dan spread operator
+  return n < 1 ? [] : [n, ...countdown(n-1)];
+}
+// Only change code above this line

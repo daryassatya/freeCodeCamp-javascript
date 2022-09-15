@@ -1,0 +1,30 @@
+/*
+Hasilkan Bilangan Bulat Acak dengan JavaScript
+
+Sangat bagus bahwa kita dapat menghasilkan angka desimal acak, tetapi bahkan lebih berguna jika kita menggunakannya untuk menghasilkan bilangan bulat acak.
+
+Gunakan Math.random()untuk menghasilkan desimal acak.
+Kalikan desimal acak itu dengan 20.
+Gunakan fungsi lain, Math.floor()untuk membulatkan angka ke bawah ke bilangan bulat terdekat.
+Ingat bahwa Math.random()tidak akan pernah bisa mengembalikan a 1dan, karena kita membulatkan ke bawah, tidak mungkin untuk benar-benar mendapatkan 20. Teknik ini akan memberi kita bilangan bulat antara 0dan 19.
+
+Menyatukan semuanya, seperti inilah tampilan kode kita:
+
+Math.floor(Math.random() * 20);
+Kami memanggil Math.random(), mengalikan hasilnya dengan 20, lalu meneruskan nilai ke Math.floor()fungsi untuk membulatkan nilai ke bawah ke bilangan bulat terdekat.
+
+-> Gunakan teknik ini untuk menghasilkan dan mengembalikan bilangan bulat acak antara 0dan 9.
+
+Tes
+Menunggu :Hasil dari randomWholeNumharus bilangan bulat.
+Menunggu :Anda harus menggunakan Math.randomuntuk menghasilkan nomor acak.
+Menunggu :Anda seharusnya mengalikan hasil Math.randomdengan 10 untuk membuatnya menjadi angka antara nol dan sembilan.
+Menunggu :Anda harus menggunakan Math.flooruntuk menghapus bagian desimal dari nomor tersebut.
+*/
+
+function randomWholeNum() {
+
+  // Only change code below this line
+
+  return Math.floor(Math.random() * 10);
+}

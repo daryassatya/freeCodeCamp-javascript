@@ -1,0 +1,37 @@
+/*
+Gunakan Operator Bersyarat (Terner)
+
+Operator kondisional , juga disebut operator ternary , dapat digunakan sebagai ekspresi if-else satu baris.
+
+Sintaksnya adalah a ? b : c, di mana akondisinya, badalah kode yang dijalankan saat kondisi kembali true, dan ckode yang dijalankan saat kondisi kembali false.
+
+Fungsi berikut menggunakan if/elsepernyataan untuk memeriksa kondisi:
+
+function findGreater(a, b) {
+  if(a > b) {
+    return "a is greater";
+  }
+  else {
+    return "b is greater or equal";
+  }
+}
+Ini dapat ditulis ulang menggunakan operator kondisional:
+
+function findGreater(a, b) {
+  return a > b ? "a is greater" : "b is greater or equal";
+}
+
+-> Gunakan operator kondisional dalam checkEqualfungsi untuk memeriksa apakah dua angka sama atau tidak. Fungsi harus mengembalikan string Equalatau string Not Equal.
+
+Tes
+Menunggu :checkEqualharus menggunakan operator kondisional
+Menunggu :checkEqual(1, 2)harus mengembalikan stringNot Equal
+Menunggu :checkEqual(1, 1)harus mengembalikan stringEqual
+Menunggu :checkEqual(1, -1)harus mengembalikan stringNot Equal
+*/
+
+function checkEqual(a, b) {
+  return a === b ? "Equal" : "Not Equal"; 
+}
+
+checkEqual(1, 2);

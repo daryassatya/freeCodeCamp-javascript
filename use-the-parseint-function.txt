@@ -1,0 +1,23 @@
+/*
+Gunakan Fungsi parseInt
+
+Fungsi parseInt()mem-parsing string dan mengembalikan integer. Berikut ini contohnya:
+
+const a = parseInt("007");
+Fungsi di atas mengubah string 007menjadi integer 7. Jika karakter pertama dalam string tidak dapat diubah menjadi angka, maka karakter tersebut akan mengembalikan NaN.
+
+-> Gunakan parseInt()dalam convertToIntegerfungsi sehingga mengubah string input strmenjadi bilangan bulat, dan mengembalikannya.
+
+Tes
+Menunggu :convertToIntegerharus menggunakan parseInt()fungsi
+Menunggu :convertToInteger("56")harus mengembalikan nomor
+Menunggu :convertToInteger("56")harus kembali 56
+Menunggu :convertToInteger("77")harus kembali 77
+Menunggu :convertToInteger("JamesBond")harus kembaliNaN
+*/
+
+function convertToInteger(str) {
+  return parseInt(str);
+}
+
+convertToInteger("56");
