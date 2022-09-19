@@ -1,0 +1,28 @@
+/*
+Gunakan Parameter Istirahat dengan Parameter Fungsi
+Untuk membantu kami membuat fungsi yang lebih fleksibel, ES6 memperkenalkan parameter sisanya untuk parameter fungsi. Dengan parameter sisanya, Anda dapat membuat fungsi yang mengambil sejumlah variabel argumen. Argumen ini disimpan dalam array yang dapat diakses nanti dari dalam fungsi.
+
+Lihat kode ini:
+
+function howMany(...args) {
+  return "You have passed " + args.length + " arguments.";
+}
+console.log(howMany(0, 1, 2));
+console.log(howMany("string", null, [1, 2, 3], { }));
+Konsol akan menampilkan string You have passed 3 arguments.dan You have passed 4 arguments..
+
+Parameter sisanya menghilangkan kebutuhan untuk memeriksa argslarik dan memungkinkan kita untuk menerapkan map(), filter()dan reduce()pada larik parameter.
+
+-> Ubah fungsi summenggunakan parameter sisa sedemikian rupa sehingga fungsi sumdapat mengambil sejumlah argumen dan mengembalikan jumlah mereka.
+
+Tes
+Menunggu :Hasil dari sum(0,1,2)seharusnya 3
+Menunggu :Hasil dari sum(1,2,3,4)seharusnya 10
+Menunggu :Hasil dari sum(5)seharusnya 5
+Menunggu :Hasil dari sum()seharusnya 0
+Menunggu :sumharus berupa fungsi panah yang menggunakan sintaks parameter lainnya ( ...) pada argsparameter.
+*/
+
+const sum = (...args) => {
+  return args.reduce((a, b) => a + b, 0);
+}

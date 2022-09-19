@@ -1,0 +1,42 @@
+/*
+Mencegah Mutasi Objek
+Seperti yang terlihat pada tantangan sebelumnya, constdeklarasi saja tidak benar-benar melindungi data Anda dari mutasi. Untuk memastikan data Anda tidak berubah, JavaScript menyediakan fungsi Object.freezeuntuk mencegah mutasi data.
+
+Setiap upaya untuk mengubah objek akan ditolak, dengan kesalahan yang muncul jika skrip berjalan dalam mode ketat.
+
+let obj = {
+  name:"FreeCodeCamp",
+  review:"Awesome"
+};
+Object.freeze(obj);
+obj.review = "bad";
+obj.newProp = "Test";
+console.log(obj); 
+Tugas obj.reviewdan obj.newPropakan menghasilkan kesalahan, karena editor kami berjalan dalam mode ketat secara default, dan konsol akan menampilkan nilai { name: "FreeCodeCamp", review: "Awesome" }.
+
+-> Dalam tantangan ini Anda akan menggunakan Object.freezeuntuk mencegah konstanta matematika berubah. Anda perlu membekukan MATH_CONSTANTSobjek sehingga tidak ada yang dapat mengubah nilai PI, menambah, atau menghapus properti.
+
+Tes
+Menunggu :Anda tidak boleh mengganti constkata kunci.
+Menunggu :MATH_CONSTANTSharus menjadi variabel konstan (dengan menggunakan const).
+Menunggu :Anda tidak boleh mengubah deklarasi asli MATH_CONSTANTS.
+Menunggu :PIharus sama 3.14.
+*/ 
+
+function freezeObj() {
+  const MATH_CONSTANTS = {
+    PI: 3.14
+  };
+  // Only change code below this line
+  Object.freeze(MATH_CONSTANTS);
+
+  // Only change code above this line
+  try {
+    MATH_CONSTANTS.PI = 99;
+  } catch(ex) {
+    console.log(ex);
+  }
+  return MATH_CONSTANTS.PI;
+}
+const PI = freezeObj();
+console.log(PI);

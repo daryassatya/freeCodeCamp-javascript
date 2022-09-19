@@ -1,0 +1,39 @@
+/*
+Mutasi Array yang Dideklarasikan dengan const
+Jika Anda tidak terbiasa const, lihat tantangan tentang constkata kunci ini .
+
+Deklarasi constini memiliki banyak kasus penggunaan dalam JavaScript modern.
+
+Beberapa pengembang lebih memilih untuk menetapkan semua variabel mereka menggunakan constsecara default, kecuali mereka tahu bahwa mereka perlu menetapkan kembali nilainya. Hanya dalam kasus itu, mereka menggunakan let.
+
+Namun, penting untuk dipahami bahwa objek (termasuk array dan fungsi) yang ditetapkan ke variabel menggunakan constmasih bisa berubah. Menggunakan constdeklarasi hanya mencegah penugasan kembali pengidentifikasi variabel.
+
+const s = [5, 6, 7];
+s = [1, 2, 3];
+s[2] = 45;
+console.log(s);
+s = [1, 2, 3]akan menghasilkan kesalahan. Setelah mengomentari baris itu, console.logakan menampilkan nilai [5, 6, 45].
+
+Seperti yang Anda lihat, Anda dapat mengubah objek [5, 6, 7]itu sendiri dan variabel sakan tetap menunjuk ke array yang diubah [5, 6, 45]. Seperti semua larik, elemen larik di sdalamnya dapat diubah, tetapi karena consttelah digunakan, Anda tidak dapat menggunakan pengenal variabel suntuk menunjuk ke larik yang berbeda menggunakan operator penugasan.
+
+-> Sebuah array dideklarasikan sebagai const s = [5, 7, 2]. Ubah array untuk [2, 5, 7]menggunakan berbagai penugasan elemen.
+
+Tes
+Menunggu :Anda tidak boleh mengganti constkata kunci.
+Menunggu :sharus menjadi variabel konstan (dengan menggunakan const).
+Menunggu :Anda tidak boleh mengubah deklarasi array asli.
+Menunggu :sharus sama dengan [2, 5, 7].
+*/
+
+const s = [5, 7, 2];
+function editInPlace() {
+  // Only change code below this line
+
+  // Using s = [2, 5, 7] would be invalid
+  s[0] = 2;
+  s[1] = 5;
+  s[2] = 7;
+
+  // Only change code above this line
+}
+editInPlace();

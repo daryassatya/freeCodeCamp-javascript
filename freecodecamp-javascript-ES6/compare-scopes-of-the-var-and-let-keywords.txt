@@ -1,0 +1,82 @@
+/*
+Bandingkan Lingkup var dan biarkan Kata Kunci
+
+Jika Anda tidak terbiasa let, lihat tantangan ini tentang perbedaan antara letdanvar .
+
+Saat Anda mendeklarasikan variabel dengan varkata kunci, itu dideklarasikan secara global, atau secara lokal jika dideklarasikan di dalam suatu fungsi.
+
+Kata letkunci berperilaku serupa, tetapi dengan beberapa fitur tambahan. Saat Anda mendeklarasikan variabel dengan letkata kunci di dalam blok, pernyataan, atau ekspresi, cakupannya terbatas pada blok, pernyataan, atau ekspresi itu.
+
+Sebagai contoh:
+
+var numArray = [];
+for (var i = 0; i < 3; i++) {
+  numArray.push(i);
+}
+console.log(numArray);
+console.log(i);
+Di sini konsol akan menampilkan nilai [0, 1, 2]dan 3.
+
+Dengan varkata kunci, idideklarasikan secara global. Jadi ketika i++dijalankan, itu memperbarui variabel global. Kode ini mirip dengan berikut ini:
+
+var numArray = [];
+var i;
+for (i = 0; i < 3; i++) {
+  numArray.push(i);
+}
+console.log(numArray);
+console.log(i);
+Di sini konsol akan menampilkan nilai [0, 1, 2]dan 3.
+
+Perilaku ini akan menyebabkan masalah jika Anda membuat fungsi dan menyimpannya untuk digunakan nanti di dalam forloop yang menggunakan ivariabel. Ini karena fungsi yang disimpan akan selalu mengacu pada nilai ivariabel global yang diperbarui.
+
+var printNumTwo;
+for (var i = 0; i < 3; i++) {
+  if (i === 2) {
+    printNumTwo = function() {
+      return i;
+    };
+  }
+}
+console.log(printNumTwo());
+Di sini konsol akan menampilkan nilai 3.
+
+Seperti yang Anda lihat, printNumTwo()mencetak 3 dan bukan 2. Ini karena nilai yang ditetapkan itelah diperbarui dan printNumTwo()mengembalikan global idan bukan nilai yang idimiliki saat fungsi dibuat di loop for. Kata letkunci tidak mengikuti perilaku ini:
+
+let printNumTwo;
+for (let i = 0; i < 3; i++) {
+  if (i === 2) {
+    printNumTwo = function() {
+      return i;
+    };
+  }
+}
+console.log(printNumTwo());
+console.log(i);
+Di sini konsol akan menampilkan nilai 2, dan kesalahan itu i is not defined.
+
+itidak didefinisikan karena tidak dideklarasikan dalam lingkup global. Itu hanya dideklarasikan dalam forpernyataan loop. printNumTwo()mengembalikan nilai yang benar karena tiga ivariabel berbeda dengan nilai unik (0, 1, dan 2) dibuat oleh letkata kunci dalam pernyataan loop.
+
+-> Perbaiki kode sehingga yang i dideklarasikan dalam ifpernyataan adalah variabel terpisah dari yang idideklarasikan di baris pertama fungsi. Pastikan untuk tidak menggunakan varkata kunci di mana pun dalam kode Anda.
+
+Latihan ini dirancang untuk mengilustrasikan perbedaan antara bagaimana vardan letkata kunci menetapkan ruang lingkup ke variabel yang dideklarasikan. Saat memprogram fungsi yang mirip dengan yang digunakan dalam latihan ini, seringkali lebih baik menggunakan nama variabel yang berbeda untuk menghindari kebingungan.
+
+Tes
+Menunggu :varseharusnya tidak ada dalam kode.
+Menunggu :Variabel yang idideklarasikan dalam ifpernyataan harus sama dengan string block scope.
+Menunggu :checkScope()harus mengembalikan stringfunction scope
+*/
+
+function checkScope() {
+  let i = 'function scope';
+  if (true) {
+    // Ini untuk membuktikan bahwa inisialisasi let i di dalam ifadalah sebuah blok
+    let i = 'block scope';
+    console.log('Block scope i is: ', i);
+  }
+  // dan pada saat memanggil let i lagi maka yg muncul tetap let i yg berisi function scope
+  console.log('Function scope i is: ', i);
+  return i;
+}
+
+console.log(checkScope());

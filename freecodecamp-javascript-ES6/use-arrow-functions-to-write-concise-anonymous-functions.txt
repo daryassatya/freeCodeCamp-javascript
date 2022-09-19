@@ -1,0 +1,34 @@
+/*
+Gunakan Fungsi Panah untuk Menulis Fungsi Anonim Ringkas
+Dalam JavaScript, kita sering tidak perlu menamai fungsi kita, terutama saat meneruskan fungsi sebagai argumen ke fungsi lain. Sebagai gantinya, kami membuat fungsi sebaris. Kami tidak perlu menamai fungsi-fungsi ini karena kami tidak menggunakannya kembali di tempat lain.
+
+Untuk mencapai ini, kita sering menggunakan sintaks berikut:
+
+const myFunc = function() {
+  const myVar = "value";
+  return myVar;
+}
+ES6 memberi kita gula sintaksis untuk tidak harus menulis fungsi anonim dengan cara ini. Sebagai gantinya, Anda dapat menggunakan sintaks fungsi panah :
+
+const myFunc = () => {
+  const myVar = "value";
+  return myVar;
+}
+Ketika tidak ada badan fungsi, dan hanya nilai balik, sintaks fungsi panah memungkinkan Anda untuk menghilangkan kata kunci returnserta tanda kurung yang mengelilingi kode. Ini membantu menyederhanakan fungsi yang lebih kecil menjadi pernyataan satu baris:
+
+const myFunc = () => "value";
+Kode ini masih akan mengembalikan string valuesecara default.
+
+-> Tulis ulang fungsi yang ditetapkan ke variabel magicyang mengembalikan a new Date()untuk menggunakan sintaks fungsi panah. Juga, pastikan tidak ada yang didefinisikan menggunakan kata kunci var.
+
+Tes
+Menunggu :Anda harus mengganti varkata kunci.
+Menunggu :magicharus menjadi variabel konstan (dengan menggunakan const).
+Menunggu :magicharus menjadi function.
+Menunggu :magic()harus mengembalikan tanggal yang benar.
+Menunggu :Kata functionkunci tidak boleh digunakan.
+*/
+
+const magic = () => new Date();
+
+console.log(magic());
