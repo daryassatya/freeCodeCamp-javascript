@@ -1,0 +1,29 @@
+/*
+Gunakan Tugas Penghancuran untuk Menetapkan Variabel dari Array
+ES6 membuat destrukturisasi array semudah merusak objek.
+
+Satu perbedaan utama antara operator spread dan perusakan array adalah bahwa operator spread membongkar semua konten array ke dalam daftar yang dipisahkan koma. Akibatnya, Anda tidak dapat memilih atau memilih elemen mana yang ingin Anda tetapkan ke variabel.
+
+Menghancurkan array memungkinkan kita melakukan hal itu:
+
+const [a, b] = [1, 2, 3, 4, 5, 6];
+console.log(a, b);
+Konsol akan menampilkan nilai adan bsebagai 1, 2.
+
+Variabel adiberi nilai pertama larik, dan bdiberi nilai larik kedua. Kami juga dapat mengakses nilai pada indeks apa pun dalam array dengan destrukturisasi dengan menggunakan koma untuk mencapai indeks yang diinginkan:
+
+const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
+console.log(a, b, c);
+Konsol akan menampilkan nilai a, b, dan csebagai 1, 2, 5.
+
+-> Gunakan tugas pengrusakan untuk menukar nilai dari adan bsehingga amenerima nilai yang disimpan di b, dan bmenerima nilai yang disimpan di a.
+
+Tes
+Menunggu :Nilai aharus 6, setelah bertukar.
+Menunggu :Nilai bharus 8, setelah bertukar.
+Menunggu :Anda harus menggunakan perusakan array untuk menukar adan b.
+*/ 
+
+let a = 8, b = 6;
+[a, b] = [b, a];
+// Only change code below this line

@@ -1,0 +1,35 @@
+/*
+Gunakan Tugas Penghancuran untuk Menetapkan Variabel dari Objek
+
+Destructuring memungkinkan Anda untuk menetapkan nama variabel baru saat mengekstrak nilai. Anda dapat melakukan ini dengan meletakkan nama baru setelah titik dua saat menetapkan nilai.
+
+Menggunakan objek yang sama dari contoh terakhir:
+
+const user = { name: 'John Doe', age: 34 };
+Berikut adalah bagaimana Anda dapat memberikan nama variabel baru dalam tugas:
+
+const { name: userName, age: userAge } = user;
+Anda dapat membacanya sebagai "mendapatkan nilai user.namedan menetapkannya ke variabel baru bernama userName" dan seterusnya. Nilai dari userNameakan menjadi string John Doe, dan nilai userAgeakan menjadi nomor 34.
+
+-> Ganti dua tugas dengan tugas perusakan yang setara. Itu masih harus menetapkan variabel highTodaydan highTomorrownilai dari todaydan tomorrowdari HIGH_TEMPERATURESobjek.
+
+Tes
+Menunggu :Anda harus menghapus sintaks penugasan ES5.
+Menunggu :Anda harus menggunakan destructuring untuk membuat highTodayvariabel.
+Menunggu :Anda harus menggunakan destructuring untuk membuat highTomorrowvariabel.
+Menunggu :highTodayharus sama dengan 77dan highTomorrowharus sama dengan 80.
+*/
+
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+// Only change code below this line
+  
+// const highToday = HIGH_TEMPERATURES.today;
+// const highTomorrow = HIGH_TEMPERATURES.tomorrow; 
+
+const {today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES;
+// Only change code above this line

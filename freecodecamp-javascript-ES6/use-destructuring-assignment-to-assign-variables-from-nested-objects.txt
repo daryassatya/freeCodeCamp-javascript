@@ -1,0 +1,45 @@
+/*
+Gunakan Tugas Penghancuran untuk Menetapkan Variabel dari Objek Bersarang
+
+Anda dapat menggunakan prinsip yang sama dari dua pelajaran sebelumnya untuk merusak struktur nilai dari objek bersarang.
+
+Menggunakan objek yang mirip dengan contoh sebelumnya:
+
+const user = {
+  johnDoe: { 
+    age: 34,
+    email: 'johnDoe@freeCodeCamp.com'
+  }
+};
+Berikut ini cara mengekstrak nilai properti objek dan menetapkannya ke variabel dengan nama yang sama:
+
+const { johnDoe: { age, email }} = user;
+Dan inilah cara Anda dapat menetapkan nilai properti objek ke variabel dengan nama berbeda:
+
+const { johnDoe: { age: userAge, email: userEmail }} = user;
+
+-> Ganti dua tugas dengan tugas perusakan yang setara. Itu masih harus menetapkan variabel lowTodaydan highTodaynilai dari today.lowdan today.highdari LOCAL_FORECASTobjek.
+
+Tes
+Menunggu :Anda harus menghapus sintaks penugasan ES5.
+Menunggu :Anda harus menggunakan destructuring untuk membuat lowTodayvariabel.
+Menunggu :Anda harus menggunakan destructuring untuk membuat highTodayvariabel.
+Menunggu :lowTodayharus sama dengan 64dan highTodayharus sama dengan 77.
+*/
+
+const LOCAL_FORECAST = {
+  yesterday: { low: 61, high: 75 },
+  today: { low: 64, high: 77 },
+  tomorrow: { low: 68, high: 80 }
+};
+
+// Only change code below this line
+  
+// const lowToday = LOCAL_FORECAST.today.low;
+// const highToday = LOCAL_FORECAST.today.high;
+
+const {
+  today: {low: lowToday, high: highToday}
+} = LOCAL_FORECAST;
+
+// Only change code above this line

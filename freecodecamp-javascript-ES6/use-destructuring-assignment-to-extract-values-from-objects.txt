@@ -1,0 +1,45 @@
+/*
+Gunakan Tugas Penghancuran untuk Mengekstrak Nilai dari Objek
+
+Penugasan destrukturisasi adalah sintaks khusus yang diperkenalkan di ES6, untuk menetapkan nilai yang diambil langsung dari objek dengan rapi.
+
+Perhatikan kode ES5 berikut:
+
+const user = { name: 'John Doe', age: 34 };
+
+const name = user.name;
+const age = user.age;
+nameakan memiliki nilai string John Doe, dan ageakan memiliki nomor 34.
+
+Berikut adalah pernyataan penugasan yang setara menggunakan sintaks perusakan ES6:
+
+const { name, age } = user;
+Sekali lagi, nameakan memiliki nilai string John Doe, dan ageakan memiliki number 34.
+
+Di sini, variabel nameand ageakan dibuat dan diberi nilai nilai masing-masing dari userobjek. Anda dapat melihat betapa bersihnya ini.
+
+Anda dapat mengekstrak sebanyak atau beberapa nilai dari objek yang Anda inginkan.
+
+-> Ganti dua tugas dengan tugas perusakan yang setara. Itu masih harus menetapkan variabel todaydan tomorrownilai dari todaydan tomorrowdari HIGH_TEMPERATURESobjek.
+
+Tes
+Menunggu :Anda harus menghapus sintaks penugasan ES5.
+Menunggu :Anda harus menggunakan destructuring untuk membuat todayvariabel.
+Menunggu :Anda harus menggunakan destructuring untuk membuat tomorrowvariabel.
+Menunggu :todayharus sama dengan 77dan tomorrowharus sama dengan 80.
+*/
+
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+// Only change code below this line
+
+// const today = HIGH_TEMPERATURES.today;
+// const tomorrow = HIGH_TEMPERATURES.tomorrow;
+
+const {today, tomorrow} = HIGH_TEMPERATURES;
+
+// Only change code above this line

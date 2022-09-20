@@ -1,0 +1,35 @@
+/*
+Gunakan Operator Spread untuk Mengevaluasi Array Di Tempat
+
+ES6 memperkenalkan operator spread , yang memungkinkan kita untuk memperluas array dan ekspresi lain di tempat di mana banyak parameter atau elemen diharapkan.
+
+Kode ES5 di bawah ini digunakan apply()untuk menghitung nilai maksimum dalam array:
+
+var arr = [6, 89, 3, 45];
+var maximus = Math.max.apply(null, arr);
+maximusakan memiliki nilai 89.
+
+Kami harus menggunakan Math.max.apply(null, arr)karena Math.max(arr)kembali NaN. Math.max()mengharapkan argumen yang dipisahkan koma, tetapi bukan array. Operator spread membuat sintaks ini lebih baik untuk dibaca dan dipelihara.
+
+const arr = [6, 89, 3, 45];
+const maximus = Math.max(...arr);
+maximusakan memiliki nilai 89.
+
+...arrmengembalikan array yang belum dibongkar. Dengan kata lain, itu menyebarkan array. Namun, operator spread hanya berfungsi di tempat, seperti dalam argumen ke fungsi atau dalam literal array. Kode berikut tidak akan berfungsi:
+
+const spreaded = ...arr;
+
+-> Salin semua konten arr1ke dalam array lain arr2menggunakan operator spread.
+
+Tes
+Menunggu :arr2harus salinan yang benar dari arr1.
+Menunggu :...spread operator harus digunakan untuk menduplikasi arr1.
+Menunggu :arr2harus tetap tidak berubah ketika arr1diubah.
+*/
+
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+
+arr2 = [...arr1];  // Change this line
+
+console.log(arr2);
