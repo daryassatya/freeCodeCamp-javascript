@@ -1,0 +1,29 @@
+/*
+Tulis Deklarasi Literal Objek Ringkas Menggunakan Singkatan Properti Objek
+
+ES6 menambahkan beberapa dukungan yang bagus untuk mendefinisikan literal objek dengan mudah.
+
+Perhatikan kode berikut:
+
+const getMousePosition = (x, y) => ({
+  x: x,
+  y: y
+});
+
+getMousePositionadalah fungsi sederhana yang mengembalikan objek yang berisi dua properti. ES6 menyediakan gula sintaksis untuk menghilangkan redundansi karena harus menulis x: x. Anda cukup menulis xsekali, dan itu akan dikonversi ke x: x(atau sesuatu yang setara) di bawah tenda. Berikut adalah fungsi yang sama dari atas yang ditulis ulang untuk menggunakan sintaks baru ini:
+
+const getMousePosition = (x, y) => ({ x, y });
+
+-> Gunakan singkatan properti objek dengan literal objek untuk membuat dan mengembalikan objek dengan name, agedan genderproperti.
+
+Tes
+Menunggu :createPerson("Zodiac Hasbro", 56, "male")harus kembali {name: "Zodiac Hasbro", age: 56, gender: "male"}.
+Menunggu :Kode Anda tidak boleh menggunakan key:value.
+*/
+
+
+const createPerson = (name, age, gender) => {
+  // Only change code below this line
+  return ({name,age,gender});
+  // Only change code above this line
+};

@@ -1,0 +1,49 @@
+/*
+Gunakan Sintaks kelas untuk Mendefinisikan Fungsi Konstruktor
+
+ES6 menyediakan sintaks baru untuk membuat objek, menggunakan kata kunci class .
+
+Perlu dicatat bahwa classsintaks hanya sintaks, dan bukan implementasi berbasis kelas penuh dari paradigma berorientasi objek, tidak seperti dalam bahasa seperti Java, Python, Ruby, dll.
+
+Di ES5, kami biasanya mendefinisikan constructorfungsi dan menggunakan newkata kunci untuk membuat instance objek.
+
+var SpaceShuttle = function(targetPlanet){
+  this.targetPlanet = targetPlanet;
+}
+var zeus = new SpaceShuttle('Jupiter');
+Sintaksnya classhanya menggantikan constructorpembuatan fungsi:
+
+class SpaceShuttle {
+  constructor(targetPlanet) {
+    this.targetPlanet = targetPlanet;
+  }
+}
+const zeus = new SpaceShuttle('Jupiter');
+Perlu dicatat bahwa classkata kunci mendeklarasikan fungsi baru, yang ditambahkan konstruktor. Konstruktor ini dipanggil ketika newdipanggil untuk membuat objek baru.
+
+Catatan: UpperCamelCase harus digunakan oleh konvensi untuk nama kelas ES6, seperti yang SpaceShuttledigunakan di atas.
+
+Metode constructoradalah metode khusus untuk membuat dan menginisialisasi objek yang dibuat dengan kelas. Anda akan mempelajari lebih lanjut tentang itu di bagian Pemrograman Berorientasi Objek dari Algoritma JavaScript Dan Sertifikasi Struktur Data.
+
+-> Gunakan classkata kunci dan tulis a constructoruntuk membuat Vegetablekelas.
+
+Kelas Vegetablememungkinkan Anda membuat objek nabati dengan properti nameyang diteruskan ke file constructor.
+
+Tes
+Menunggu :Vegetableharus classdengan metode yang ditentukan constructor.
+Menunggu :Kata classkunci harus digunakan.
+Menunggu :Vegetableharus bisa dicontoh.
+Menunggu :carrot.nameharus kembali carrot.
+*/
+
+// Only change code below this line
+class Vegetable {
+  constructor(name) {
+    this.name = name
+  }
+}
+
+// Only change code above this line
+
+const carrot = new Vegetable('carrot');
+console.log(carrot.name); // Should display 'carrot'

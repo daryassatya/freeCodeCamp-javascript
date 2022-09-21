@@ -1,0 +1,37 @@
+/*
+Tulis Fungsi Deklaratif Ringkas dengan ES6
+
+Saat mendefinisikan fungsi di dalam objek di ES5, kita harus menggunakan kata kunci functionsebagai berikut:
+
+const person = {
+  name: "Taylor",
+  sayHello: function() {
+    return `Hello! My name is ${this.name}.`;
+  }
+};
+Dengan ES6, Anda dapat menghapus functionkata kunci dan titik dua sekaligus saat mendefinisikan fungsi dalam objek. Berikut ini contoh sintaks ini:
+
+const person = {
+  name: "Taylor",
+  sayHello() {
+    return `Hello! My name is ${this.name}.`;
+  }
+};
+Refactor fungsi setGeardi dalam objek bicycleuntuk menggunakan sintaks singkatan yang dijelaskan di atas.
+
+Tes
+Menunggu :Ekspresi fungsi tradisional tidak boleh digunakan.
+Menunggu :setGearharus merupakan fungsi deklaratif.
+Menunggu :bicycle.setGear(48)harus mengubah gearnilainya menjadi 48.
+*/
+
+// Only change code below this line
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    this.gear = newGear;
+  }
+};
+// Only change code above this line
+bicycle.setGear(3);
+console.log(bicycle.gear);

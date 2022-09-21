@@ -1,0 +1,40 @@
+/*
+Gunakan Tugas Penghancuran untuk Melewati Objek sebagai Parameter Fungsi
+Dalam beberapa kasus, Anda dapat merusak objek dalam argumen fungsi itu sendiri.
+
+Perhatikan kode di bawah ini:
+
+const profileUpdate = (profileData) => {
+  const { name, age, nationality, location } = profileData;
+
+}
+Ini secara efektif merusak objek yang dikirim ke fungsi. Ini juga dapat dilakukan di tempat:
+
+const profileUpdate = ({ name, age, nationality, location }) => {
+
+}
+Ketika profileDataditeruskan ke fungsi di atas, nilainya didestruktur dari parameter fungsi untuk digunakan di dalam fungsi.
+
+Gunakan penugasan destrukturisasi dalam argumen ke fungsi halfuntuk mengirim saja maxdan mindi dalam fungsi.
+
+Tes
+Menunggu :statsharus menjadi object.
+Menunggu :half(stats)seharusnya28.015
+Menunggu :Destrukturisasi harus digunakan.
+Menunggu :Parameter yang rusak harus digunakan.
+*/
+
+const stats = {
+  max: 56.78,
+  standard_deviation: 4.34,
+  median: 34.54,
+  mode: 23.87,
+  min: -0.75,
+  average: 35.85
+};
+
+
+
+// Only change code below this line
+const half = ({ max, min }) => (max + min) / 2.0;
+// Only change code above this line

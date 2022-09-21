@@ -1,0 +1,69 @@
+/*
+Buat String menggunakan Literal Template
+Sebuah fitur baru dari ES6 adalah template literal . Ini adalah jenis string khusus yang membuat pembuatan string kompleks menjadi lebih mudah.
+
+Literal template memungkinkan Anda membuat string multi-baris dan menggunakan fitur interpolasi string untuk membuat string.
+
+Perhatikan kode di bawah ini:
+
+const person = {
+  name: "Zodiac Hasbro",
+  age: 56
+};
+
+const greeting = `Hello, my name is ${person.name}!
+I am ${person.age} years old.`;
+
+console.log(greeting);
+Konsol akan menampilkan string Hello, my name is Zodiac Hasbro!dan I am 56 years old..
+
+Banyak hal terjadi di sana. Pertama, contoh menggunakan backticks ( `), bukan tanda kutip ( 'atau "), untuk membungkus string. Kedua, perhatikan bahwa string adalah multi-baris, baik dalam kode dan output. Ini menghemat penyisipan \ndi dalam string. Sintaks ${variable}yang digunakan di atas adalah placeholder. Pada dasarnya, Anda tidak perlu lagi menggunakan penggabungan dengan +operator. Untuk menambahkan variabel ke string, Anda cukup memasukkan variabel ke dalam string template dan membungkusnya dengan ${dan }. Demikian pula, Anda dapat menyertakan ekspresi lain dalam literal string Anda, misalnya ${a + b}. Cara baru membuat string ini memberi Anda lebih banyak fleksibilitas untuk membuat string yang kuat.
+
+-> li Gunakan sintaks literal template dengan backticks untuk membuat larik string elemen daftar ( ). Setiap teks elemen daftar harus merupakan salah satu elemen larik dari failureproperti pada resultobjek dan memiliki classatribut dengan nilai text-warning. Fungsi makeListharus mengembalikan larik string item daftar.
+
+Gunakan metode iterator (jenis loop apa pun) untuk mendapatkan output yang diinginkan (ditunjukkan di bawah).
+
+[
+  '<li class="text-warning">no-var</li>',
+  '<li class="text-warning">var-on-top</li>',
+  '<li class="text-warning">linebreak</li>'
+]
+
+Tes
+Menunggu :failuresListharus berupa larik yang berisi result failurepesan.
+Menunggu :failuresListharus sama dengan output yang ditentukan.
+Menunggu :String template dan interpolasi ekspresi harus digunakan.
+Menunggu :Sebuah iterator harus digunakan.
+*/
+
+const result = {
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["no-extra-semi", "no-dup-keys"]
+};
+function makeList(arr) {
+  // Only change code below this line
+
+  // Cara 1
+  const failureItems = arr.map(data => `<li class="text-warning">${data}</li>`
+  );
+
+  // Cara 2
+  // const failureItems = arr.map(data => {
+  //  return `<li class="text-warning">${data}</li>`
+  // });
+
+
+  // Cara 3
+  // const failureItems = [];
+  // arr.forEach(function(data){
+  //   failureItems.push(`<li class="text-warning">${data}</li>`);
+  // });
+
+  // Only change code above this line
+
+  return failureItems;
+}
+
+const failuresList = makeList(result.failure);
+console.log(makeList(result.failure));

@@ -1,0 +1,33 @@
+/*
+Gunakan Penugasan Penghancuran dengan Parameter Istirahat untuk Menetapkan Ulang Elemen Array
+
+Dalam beberapa situasi yang melibatkan destrukturisasi array, kita mungkin ingin mengumpulkan elemen lainnya ke dalam array terpisah.
+
+Hasilnya mirip dengan Array.prototype.slice(), seperti yang ditunjukkan di bawah ini:
+
+const [a, b, ...arr] = [1, 2, 3, 4, 5, 7];
+console.log(a, b);
+console.log(arr);
+Konsol akan menampilkan nilai 1, 2dan [3, 4, 5, 7].
+
+Variabel adan bambil nilai pertama dan kedua dari array. Setelah itu, karena kehadiran parameter lainnya, arrdapatkan sisa nilai dalam bentuk array. Elemen sisanya hanya berfungsi dengan benar sebagai variabel terakhir dalam daftar. Seperti pada, Anda tidak dapat menggunakan parameter rest untuk menangkap subarray yang meninggalkan elemen terakhir dari array asli.
+
+-> Gunakan penugasan destrukturisasi dengan parameter sisanya untuk melakukan yang efektif Array.prototype.slice()sehingga arrmerupakan sub-array dari array asli sourcedengan dua elemen pertama dihilangkan.
+
+Tes
+Menunggu :arrseharusnya[3,4,5,6,7,8,9,10]
+Menunggu :sourceseharusnya[1,2,3,4,5,6,7,8,9,10]
+Menunggu :Array.slice()tidak boleh digunakan.
+Menunggu :Destructuring on listharus digunakan.
+
+CATATAN DIATAS HARUS DIHAPUS JIKA INGIN MENJALANKANNYA DI FREECODECAMP!
+*/ 
+
+const source = [1,2,3,4,5,6,7,8,9,10];
+function removeFirstTwo(list) {
+  // Only change code below this line
+  const [a,b, ...arr] = list; // Change this line
+  // Only change code above this line
+  return arr;
+}
+const arr = removeFirstTwo(source);
