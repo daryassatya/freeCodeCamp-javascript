@@ -1,0 +1,28 @@
+/*
+Buat Penggantian Ekspor dengan default ekspor
+Dalam exportpelajaran, Anda mempelajari tentang sintaks yang disebut sebagai export bernama . Ini memungkinkan Anda untuk membuat beberapa fungsi dan variabel tersedia untuk digunakan di file lain.
+
+Ada exportsintaks lain yang perlu Anda ketahui, yang dikenal sebagai export default . Biasanya Anda akan menggunakan sintaks ini jika hanya satu nilai yang diekspor dari sebuah file. Ini juga digunakan untuk membuat nilai fallback untuk file atau modul.
+
+Di bawah ini adalah contoh menggunakan export default:
+
+export default function add(x, y) {
+  return x + y;
+}
+
+export default function(x, y) {
+  return x + y;
+}
+Yang pertama adalah fungsi bernama, dan yang kedua adalah fungsi anonim.
+
+Karena export defaultdigunakan untuk mendeklarasikan nilai fallback untuk modul atau file, Anda hanya dapat memiliki satu nilai sebagai ekspor default di setiap modul atau file. Selain itu, Anda tidak dapat menggunakan export defaultdengan var, let, atauconst
+
+-> Fungsi berikut harus menjadi nilai mundur untuk modul. Silakan tambahkan kode yang diperlukan untuk melakukannya.
+
+Tes
+Menunggu :Kode Anda harus menggunakan exportfallback.
+*/
+
+export default function subtract(x, y) {
+  return x - y;
+}

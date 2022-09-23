@@ -1,0 +1,18 @@
+<html>
+  <body>
+
+<!-- Buat Skrip Modul
+JavaScript dimulai dengan peran kecil untuk dimainkan di sebagian besar web HTML. Saat ini, ini sangat besar, dan beberapa situs web dibuat hampir seluruhnya dengan JavaScript. Untuk membuat JavaScript lebih modular, bersih, dan dapat dipelihara; ES6 memperkenalkan cara untuk berbagi kode dengan mudah di antara file JavaScript. Ini melibatkan mengekspor bagian dari file untuk digunakan dalam satu atau lebih file lain, dan mengimpor bagian yang Anda butuhkan, di mana Anda membutuhkannya. Untuk memanfaatkan fungsi ini, Anda perlu membuat skrip di dokumen HTML Anda dengan typeekstensi module. Berikut ini contohnya:
+
+<script type="module" src="filename.js"></script>
+Skrip yang menggunakan moduletipe ini sekarang dapat menggunakan importdan exportfitur yang akan Anda pelajari di tantangan mendatang.
+
+Tambahkan skrip ke jenis dokumen HTML moduledan berikan file sumbernyaindex.js
+
+ -->
+
+    <!-- Only change code below this line -->
+    <script type="module" src="index.js"></script>
+    <!-- Only change code above this line -->
+  </body>
+</html>

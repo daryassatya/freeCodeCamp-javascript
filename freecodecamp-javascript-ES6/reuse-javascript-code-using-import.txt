@@ -1,0 +1,26 @@
+/*
+Gunakan Kembali Kode JavaScript Menggunakan impor
+
+importmemungkinkan Anda memilih bagian file atau modul mana yang akan dimuat. Dalam pelajaran sebelumnya, contoh diekspor adddari math_functions.jsfile. Berikut cara mengimpornya untuk digunakan di file lain:
+
+import { add } from './math_functions.js';
+Di sini, importakan menemukan adddi math_functions.js, impor hanya fungsi itu untuk Anda gunakan, dan abaikan sisanya. Memberi ./tahu impor untuk mencari math_functions.jsfile di folder yang sama dengan file saat ini. Jalur file relatif ( ./) dan ekstensi file ( .js) diperlukan saat menggunakan impor dengan cara ini.
+
+Anda dapat mengimpor lebih dari satu item dari file dengan menambahkannya dalam importpernyataan seperti ini:
+
+import { add, subtract } from './math_functions.js';
+
+-> Tambahkan importpernyataan yang sesuai yang akan memungkinkan file saat ini menggunakan fungsi uppercaseStringdan lowercaseStringyang Anda ekspor di pelajaran sebelumnya. Fungsi-fungsi ini berada dalam file bernama string_functions.js, yang berada di direktori yang sama dengan file saat ini.
+
+Tes
+Menunggu :Anda harus mengimpor dengan benar uppercaseString.
+Menunggu :Anda harus mengimpor dengan benar lowercaseString.
+*/
+
+// Only change code under this line
+
+import {uppercaseString,lowercaseString } from './string_functions.js';
+// Only change code above this line
+
+uppercaseString("hello");
+lowercaseString("WORLD!");

@@ -1,0 +1,22 @@
+/*
+Gunakan * untuk Mengimpor Semuanya dari File
+Misalkan Anda memiliki file dan Anda ingin mengimpor semua isinya ke dalam file saat ini. Ini dapat dilakukan dengan import * assintaks. Berikut adalah contoh di mana konten file bernama math_functions.jsdiimpor ke file di direktori yang sama:
+
+import * as myMathModule from "./math_functions.js";
+Pernyataan di atas importakan membuat sebuah objek bernama myMathModule. Ini hanya nama variabel, Anda bisa menamainya apa saja. Objek akan berisi semua ekspor dari math_functions.jsdalamnya, sehingga Anda dapat mengakses fungsi seperti yang Anda lakukan pada properti objek lainnya. Berikut cara menggunakan adddan subtractfungsi yang diimpor:
+
+myMathModule.add(2,3);
+myMathModule.subtract(5,3);
+
+-> Kode dalam file ini memerlukan konten file: string_functions.js, yang berada di direktori yang sama dengan file saat ini. Gunakan import * assintaks untuk mengimpor semuanya dari file ke objek bernama stringFunctions.
+
+Tes
+Menunggu :Kode Anda harus menggunakan import * assintaks dengan benar.
+*/
+
+// Only change code above this line
+import * as stringFunctions from './string_functions.js';
+// Only change code above this line
+
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");

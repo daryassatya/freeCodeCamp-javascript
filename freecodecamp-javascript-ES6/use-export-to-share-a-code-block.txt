@@ -1,0 +1,34 @@
+/*
+Gunakan ekspor untuk Berbagi Blok Kode
+
+Bayangkan sebuah file bernama math_functions.jsyang berisi beberapa fungsi yang terkait dengan operasi matematika. Salah satunya disimpan dalam variabel, add, yang mengambil dua angka dan mengembalikan jumlah mereka. Anda ingin menggunakan fungsi ini di beberapa file JavaScript yang berbeda. Untuk membagikannya dengan file lain ini, Anda harus terlebih dahulu export.
+
+export const add = (x, y) => {
+  return x + y;
+}
+Di atas adalah cara umum untuk mengekspor satu fungsi, tetapi Anda dapat mencapai hal yang sama seperti ini:
+
+const add = (x, y) => {
+  return x + y;
+}
+
+export { add };
+Saat Anda mengekspor variabel atau fungsi, Anda dapat mengimpornya ke file lain dan menggunakannya tanpa harus menulis ulang kode. Anda dapat mengekspor banyak hal dengan mengulangi contoh pertama untuk setiap hal yang ingin Anda ekspor, atau dengan menempatkan semuanya dalam pernyataan ekspor dari contoh kedua, seperti ini:
+
+export { add, subtract };
+Ada dua fungsi terkait string di editor. Ekspor keduanya menggunakan metode pilihan Anda.
+
+Tes
+Menunggu :Anda harus mengekspor dengan benar uppercaseString.
+Menunggu :Anda harus mengekspor dengan benar lowercaseString.
+*/
+
+const uppercaseString = (string) => {
+  return string.toUpperCase();
+}
+
+const lowercaseString = (string) => {
+  return string.toLowerCase()
+}
+
+export {uppercaseString, lowercaseString};
