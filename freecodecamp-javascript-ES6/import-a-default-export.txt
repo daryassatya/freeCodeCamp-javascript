@@ -1,0 +1,20 @@
+  /*
+  Impor Ekspor Default
+
+Dalam tantangan terakhir, Anda telah mempelajari tentang export defaultdan kegunaannya. Untuk mengimpor ekspor default, Anda perlu menggunakan importsintaks yang berbeda. Dalam contoh berikut, addadalah default ekspor math_functions.jsfile. Berikut cara mengimpornya:
+
+import add from "./math_functions.js";
+Sintaksnya berbeda di satu tempat utama. Nilai yang diimpor, add, tidak diapit oleh kurung kurawal ( {}). adddi sini hanyalah nama variabel untuk apa pun ekspor default math_functions.jsfile tersebut. Anda dapat menggunakan nama apa pun di sini saat mengimpor default.
+
+-> Dalam kode berikut, impor ekspor default dari math_functions.jsfile, ditemukan di direktori yang sama dengan file ini. Beri nama impor subtract.
+
+Tes
+Menunggu :Anda harus mengimpor subtractdari math_functions.js.
+  */
+
+
+// Only change code under this line
+import subtract from "./math_functions.js";
+// Only change code above this line
+
+subtract(7,4);

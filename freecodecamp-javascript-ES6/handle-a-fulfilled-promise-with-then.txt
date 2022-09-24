@@ -1,0 +1,32 @@
+/*
+Tangani Janji yang Terpenuhi dengan itu
+
+Promise paling berguna ketika Anda memiliki proses yang memakan waktu yang tidak diketahui dalam kode Anda (yaitu sesuatu yang tidak sinkron), sering kali merupakan permintaan server. Saat Anda membuat permintaan server, dibutuhkan beberapa waktu, dan setelah selesai Anda biasanya ingin melakukan sesuatu dengan respons dari server. Hal ini dapat dicapai dengan menggunakan thenmetode. Metode thenini dieksekusi segera setelah janji Anda dipenuhi dengan resolve. Berikut ini contohnya:
+
+myPromise.then(result => {
+  
+});
+resultberasal dari argumen yang diberikan kepada resolvemetode.
+
+-> Tambahkan thenmetode ke janji Anda. Gunakan resultsebagai parameter fungsi panggilan baliknya dan masuk resultke konsol.
+
+Tes
+Menunggu :Anda harus memanggil thenmetode pada janji.
+Menunggu :Metode Anda thenharus memiliki fungsi panggilan balik dengan resultsebagai parameternya.
+Menunggu :Anda harus masuk resultke konsol.
+*/
+
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to true to represent a successful response from a server
+  let responseFromServer = true;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+makeServerRequest.then(result => {
+  console.log(result);
+});

@@ -1,0 +1,19 @@
+/*
+Buat Janji JavaScript
+
+Janji dalam JavaScript persis seperti yang terdengar - Anda menggunakannya untuk membuat janji untuk melakukan sesuatu, biasanya secara asinkron. Ketika tugas selesai, Anda memenuhi janji Anda atau gagal melakukannya. Promiseadalah fungsi konstruktor, jadi Anda perlu menggunakan newkata kunci untuk membuatnya. Dibutuhkan fungsi, sebagai argumennya, dengan dua parameter - resolvedan reject. Ini adalah metode yang digunakan untuk menentukan hasil dari janji. Sintaksnya terlihat seperti ini:
+
+const myPromise = new Promise((resolve, reject) => {
+
+});
+
+-> Buat janji baru bernama makeServerRequest. Berikan fungsi dengan resolvedan rejectparameter ke konstruktor.
+
+Tes
+Menunggu :Anda harus menetapkan janji ke variabel yang dideklarasikan bernama makeServerRequest.
+Menunggu :Janji Anda harus menerima fungsi dengan resolvedan rejectsebagai parameter.
+*/
+
+const makeServerRequest = new Promise((resolve, reject) => {
+
+});

@@ -1,0 +1,36 @@
+/*
+Tangani Janji yang Ditolak dengan tangkapan
+
+catchadalah metode yang digunakan ketika janji Anda telah ditolak. Itu dieksekusi segera setelah metode janji rejectdipanggil. Berikut sintaksnya:
+
+myPromise.catch(error => {
+  
+});
+erroradalah argumen yang diteruskan ke rejectmetode.
+
+Tambahkan catchmetode ke janji Anda. Gunakan errorsebagai parameter fungsi panggilan baliknya dan masuk errorke konsol.
+
+Tes
+Menunggu :Anda harus memanggil catchmetode pada janji.
+Menunggu :Metode Anda catchharus memiliki fungsi panggilan balik dengan errorsebagai parameternya.
+Menunggu :Anda harus masuk errorke konsol.
+*/
+
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to false to represent an unsuccessful response from a server
+  let responseFromServer = false;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+makeServerRequest.then(result => {
+  console.log(result);
+});
+
+makeServerRequest.catch(error => {
+  console.log(error);
+});

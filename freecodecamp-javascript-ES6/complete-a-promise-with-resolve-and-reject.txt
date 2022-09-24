@@ -1,0 +1,33 @@
+/*
+Selesaikan Janji dengan tekad dan tolak
+
+Sebuah janji memiliki tiga status: pending, fulfilled, dan rejected. Janji yang Anda buat di tantangan terakhir selamanya terjebak di pendingnegara bagian karena Anda tidak menambahkan cara untuk menyelesaikan janji. Parameter resolveand rejectyang diberikan pada argumen janji digunakan untuk melakukan ini. resolvedigunakan saat Anda ingin janji Anda berhasil, dan rejectdigunakan saat Anda ingin janji itu gagal. Ini adalah metode yang mengambil argumen, seperti yang terlihat di bawah ini.
+
+const myPromise = new Promise((resolve, reject) => {
+  if(condition here) {
+    resolve("Promise was fulfilled");
+  } else {
+    reject("Promise was rejected");
+  }
+});
+Contoh di atas menggunakan string untuk argumen fungsi-fungsi ini, tetapi sebenarnya bisa apa saja. Seringkali, itu mungkin sebuah objek, yang akan Anda gunakan datanya, untuk diletakkan di situs web Anda atau di tempat lain.
+
+-> Buatlah janji menangani kesuksesan dan kegagalan. Jika responseFromServerya true, panggil resolvemetode untuk berhasil menyelesaikan janji. Lewati resolvestring dengan nilai We got the data. Jika responseFromServerya false, gunakan rejectmetode sebagai gantinya dan berikan string: Data not received.
+
+Tes
+Menunggu :resolveharus dipanggil dengan string yang diharapkan ketika ifkondisinya true.
+Menunggu :rejectharus dipanggil dengan string yang diharapkan ketika ifkondisinya false.
+*/
+
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer represents a response from a server
+  let responseFromServer;
+    
+  if(responseFromServer) {
+    // Change this line
+    resolve("We got the data");
+  } else {  
+    // Change this line
+    reject("Data not received");
+  }
+});
