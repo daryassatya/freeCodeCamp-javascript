@@ -1,0 +1,26 @@
+/*
+Abaikan Kasus Saat Mencocokkan
+Sampai sekarang, Anda telah melihat regex untuk melakukan pencocokan string secara literal. Namun terkadang, Anda mungkin juga ingin mencocokkan perbedaan huruf besar/kecil.
+
+Huruf besar (atau terkadang huruf besar) adalah perbedaan antara huruf besar dan huruf kecil. Contoh huruf besar adalah A, B, dan C. Contoh huruf kecil adalah a, b, dan c.
+
+Anda dapat mencocokkan kedua kasus menggunakan apa yang disebut bendera. Ada flag lain tetapi di sini Anda akan fokus pada flag yang mengabaikan case - iflag. Anda dapat menggunakannya dengan menambahkannya ke regex. Contoh penggunaan flag ini adalah /ignorecase/i. Regex ini dapat cocok dengan string ignorecase, igNoreCase, dan IgnoreCase.
+
+-> Tulis regex fccRegexuntuk dicocokkan freeCodeCamp, apa pun masalahnya. Ekspresi reguler Anda tidak boleh cocok dengan singkatan atau variasi apa pun dengan spasi.
+
+Tes
+Menunggu :Regex Anda harus cocok dengan stringfreeCodeCamp
+Menunggu :Regex Anda harus cocok dengan stringFreeCodeCamp
+Menunggu :Regex Anda harus cocok dengan stringFreecodeCamp
+Menunggu :Regex Anda harus cocok dengan stringFreeCodecamp
+Menunggu :Regex Anda seharusnya tidak cocok dengan stringFree Code Camp
+Menunggu :Regex Anda harus cocok dengan stringFreeCOdeCamp
+Menunggu :Regex Anda seharusnya tidak cocok dengan stringFCC
+Menunggu :Regex Anda harus cocok dengan stringFrEeCoDeCamp
+Menunggu :Regex Anda harus cocok dengan stringFrEeCodECamp
+Menunggu :Regex Anda harus cocok dengan stringFReeCodeCAmp
+*/
+
+let myString = "freeCodeCamp";
+let fccRegex = /freecodecamp/i; // Change this line
+let result = fccRegex.test(myString);

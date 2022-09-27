@@ -1,0 +1,23 @@
+/*
+Menggunakan Metode Tes
+Ekspresi reguler digunakan dalam bahasa pemrograman untuk mencocokkan bagian dari string. Anda membuat pola untuk membantu Anda melakukan pencocokan itu.
+
+Jika Anda ingin mencari kata thedalam string The dog chased the cat, Anda dapat menggunakan ekspresi reguler berikut: /the/. Perhatikan bahwa tanda kutip tidak diperlukan dalam ekspresi reguler.
+
+JavaScript memiliki banyak cara untuk menggunakan regex. Salah satu cara untuk menguji regex adalah menggunakan .test()metode. Metode .test()ini mengambil regex, menerapkannya ke string (yang ditempatkan di dalam tanda kurung), dan mengembalikan trueatau falsejika pola Anda menemukan sesuatu atau tidak.
+
+let testStr = "freeCodeCamp";
+let testRegex = /Code/;
+testRegex.test(testStr);
+Metode testdi sini mengembalikan true.
+
+-> Terapkan regex myRegexpada string myStringmenggunakan .test()metode.
+
+Tes
+Menunggu :Anda harus menggunakan .test()untuk menguji regex.
+Menunggu :Hasil Anda harus kembali true.
+*/
+
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+let result = myRegex.test(myString); // Change this line

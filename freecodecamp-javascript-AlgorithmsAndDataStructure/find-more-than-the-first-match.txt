@@ -1,0 +1,30 @@
+/*
+Temukan Lebih Dari Pertandingan Pertama
+Sejauh ini, Anda hanya dapat mengekstrak atau mencari pola satu kali.
+
+let testStr = "Repeat, Repeat, Repeat";
+let ourRegex = /Repeat/;
+testStr.match(ourRegex);
+Di sini matchakan kembali ["Repeat"].
+
+Untuk menelusuri atau mengekstrak pola lebih dari sekali, Anda dapat menggunakan bendera penelusuran global: g.
+
+let repeatRegex = /Repeat/g;
+testStr.match(repeatRegex);
+Dan di sini matchmengembalikan nilainya["Repeat", "Repeat", "Repeat"]
+
+-> Menggunakan regex starRegex, temukan dan ekstrak kedua Twinklekata dari string twinkleStar.
+
+Catatan
+Anda dapat memiliki banyak bendera di regex Anda seperti/search/gi
+
+Tes
+Menunggu :Regex Anda starRegexharus menggunakan bendera globalg
+Menunggu :Regex Anda starRegexharus menggunakan tanda tidak peka huruf besar-kecili
+Menunggu :Pertandingan Anda harus cocok dengan kedua kemunculan kataTwinkle
+Menunggu :Pertandingan Anda resultharus memiliki dua elemen di dalamnya.
+*/
+
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /twinkle/gi; // Change this line
+let result = twinkleStar.match(starRegex); // Change this line

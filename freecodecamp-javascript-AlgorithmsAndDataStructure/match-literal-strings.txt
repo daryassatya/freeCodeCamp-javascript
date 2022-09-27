@@ -1,0 +1,28 @@
+/*
+Cocokkan String Literal
+Pada tantangan terakhir, Anda menelusuri kata Hellomenggunakan ekspresi reguler /Hello/. Regex itu mencari kecocokan literal dari string Hello. Berikut contoh lain mencari kecocokan literal dari string Kevin:
+
+let testStr = "Hello, my name is Kevin.";
+let testRegex = /Kevin/;
+testRegex.test(testStr);
+Panggilan ini testakan kembali true.
+
+Bentuk lain dari Kevintidak akan cocok. Misalnya, ekspresi reguler /Kevin/tidak akan cocok kevinatau KEVIN.
+
+let wrongRegex = /kevin/;
+wrongRegex.test(testStr);
+Panggilan ini testakan kembali false.
+
+Tantangan di masa depan akan menunjukkan bagaimana mencocokkan bentuk-bentuk lain itu juga.
+
+-> Lengkapi regex waldoRegexuntuk ditemukan "Waldo"dalam string waldoIsHidingdengan kecocokan literal.
+
+Tes
+Menunggu :Regex Anda waldoRegexharus menemukan stringWaldo
+Menunggu :Regex Anda waldoRegexseharusnya tidak mencari yang lain.
+Menunggu :Anda harus melakukan pencocokan string literal dengan regex Anda.
+*/
+
+let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
+let waldoRegex = /Waldo/; // Change this line
+let result = waldoRegex.test(waldoIsHiding);

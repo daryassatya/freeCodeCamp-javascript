@@ -1,0 +1,30 @@
+/*
+Ekstrak Pertandingan
+Sejauh ini, Anda hanya memeriksa apakah ada pola atau tidak di dalam string. Anda juga dapat mengekstrak kecocokan aktual yang Anda temukan dengan .match()metode ini.
+
+Untuk menggunakan .match()metode ini, terapkan metode pada string dan berikan regex di dalam tanda kurung.
+
+Berikut ini contohnya:
+
+"Hello, World!".match(/Hello/);
+let ourStr = "Regular expressions";
+let ourRegex = /expressions/;
+ourStr.match(ourRegex);
+Di sini yang pertama matchakan kembali ["Hello"]dan yang kedua akan kembali ["expressions"].
+
+Perhatikan bahwa .matchsintaksnya adalah "kebalikan" dari .testmetode yang telah Anda gunakan sejauh ini:
+
+'string'.match(/regex/);
+/regex/.test('string');
+
+-> Terapkan .match()metode untuk mengekstrak string coding.
+
+Tes
+Menunggu :Harus memiliki resultstringcoding
+Menunggu :Regex Anda codingRegexharus mencari stringcoding
+Menunggu :Anda harus menggunakan .match()metode.
+*/
+
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/; // Change this line
+let result = extractStr.match(codingRegex); // Change this line

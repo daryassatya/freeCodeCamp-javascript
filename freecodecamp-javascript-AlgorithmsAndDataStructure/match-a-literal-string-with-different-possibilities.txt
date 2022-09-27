@@ -1,0 +1,25 @@
+/*
+Cocokkan String Literal dengan Kemungkinan Berbeda
+Menggunakan regex seperti /coding/, Anda dapat mencari pola codingdi string lain.
+
+Ini sangat kuat untuk mencari string tunggal, tetapi terbatas hanya pada satu pola. Anda dapat mencari beberapa pola menggunakan alternationatau ORoperator: |.
+
+Operator ini mencocokkan pola sebelum atau sesudahnya. Misalnya, jika Anda ingin mencocokkan string yesatau no, ekspresi reguler yang Anda inginkan adalah /yes|no/.
+
+Anda juga dapat mencari lebih dari dua pola. Anda dapat melakukan ini dengan menambahkan lebih banyak pola dengan lebih banyak ORoperator yang memisahkannya, seperti /yes|no|maybe/.
+
+-> Lengkapi regex petRegexuntuk mencocokkan hewan peliharaan dog, cat, bird, atau fish.
+
+Tes
+Menunggu :Regex Anda petRegexharus kembali trueuntuk stringJohn has a pet dog.
+Menunggu :Regex Anda petRegexharus kembali falseuntuk stringEmma has a pet rock.
+Menunggu :Regex Anda petRegexharus kembali trueuntuk stringEmma has a pet bird.
+Menunggu :Regex Anda petRegexharus kembali trueuntuk stringLiz has a pet cat.
+Menunggu :Regex Anda petRegexharus kembali falseuntuk stringKara has a pet dolphin.
+Menunggu :Regex Anda petRegexharus kembali trueuntuk stringAlice has a pet fish.
+Menunggu :Regex Anda petRegexharus kembali falseuntuk stringJimmy has a pet computer.
+*/
+
+let petString = "James has a pet cat.";
+let petRegex = /dog|cat|bird|fish/; // Change this line
+let result = petRegex.test(petString);

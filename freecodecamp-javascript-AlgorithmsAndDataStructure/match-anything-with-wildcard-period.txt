@@ -1,0 +1,34 @@
+/*
+Cocokkan Apa Pun dengan Periode Wildcard
+
+Terkadang Anda tidak (atau tidak perlu) mengetahui karakter yang tepat dalam pola Anda. Memikirkan semua kata yang cocok, katakanlah, salah eja akan memakan waktu lama. Untungnya, Anda dapat menghemat waktu menggunakan karakter wildcard:.
+
+Karakter wildcard .akan cocok dengan salah satu karakter. Wildcard juga disebut dotdan period. Anda dapat menggunakan karakter wildcard sama seperti karakter lain di regex. Misalnya, jika Anda ingin mencocokkan hug, huh, hut, dan hum, Anda dapat menggunakan ekspresi reguler /hu./untuk mencocokkan keempat kata.
+
+let humStr = "I'll hum a song";
+let hugStr = "Bear hug";
+let huRegex = /hu./;
+huRegex.test(humStr);
+huRegex.test(hugStr);
+Kedua testpanggilan ini akan kembali true.
+
+-> Lengkapi regex unRegexsehingga cocok dengan string run, sun, fun, pun, nun, dan bun. Regex Anda harus menggunakan karakter wildcard.
+
+Tes
+Menunggu :Anda harus menggunakan .test()metode.
+Menunggu :Anda harus menggunakan karakter wildcard di regex AndaunRegex
+Menunggu :Regex Anda unRegexharus cocok rundengan stringLet us go on a run.
+Menunggu :Regex Anda unRegexharus cocok sundengan stringThe sun is out today.
+Menunggu :Regex Anda unRegexharus cocok fundengan stringCoding is a lot of fun.
+Menunggu :Regex Anda unRegexharus cocok pundengan stringSeven days without a pun makes one weak.
+Menunggu :Regex Anda unRegexharus cocok nundengan stringOne takes a vow to be a nun.
+Menunggu :Regex Anda unRegexharus cocok bundengan stringShe got fired from the hot dog stand for putting her hair in a bun.
+Menunggu :Regex Anda unRegexseharusnya tidak cocok dengan stringThere is a bug in my code.
+Menunggu :Regex Anda unRegexseharusnya tidak cocok dengan stringCatch me if you can.
+*/
+
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/; // Change this line
+let result = unRegex.test(exampleStr);
+
+console.log(result);
